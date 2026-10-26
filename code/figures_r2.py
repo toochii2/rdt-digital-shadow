@@ -26,7 +26,7 @@ COL = {"SPC": LGREY, "LR-snap": MGREY, "XGB-snap": MGREY, "SPC-DS": GREY, "CCS":
 
 
 def save(fig, name):
-    fig.savefig(OUT + name + ".png", dpi=800, bbox_inches="tight", pad_inches=0.02)
+    fig.savefig(OUT + name + ".png", dpi=880, bbox_inches="tight", pad_inches=0.02)
     fig.savefig(OUT + name + ".pdf", bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
