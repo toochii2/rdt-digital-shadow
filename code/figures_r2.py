@@ -170,16 +170,21 @@ def fig_story(seed=10):
             j = k
         else: j += 1
     ax.set_ylabel("Back-pressure\n(kPa)")
-    ax2 = axs[1]; ax2.plot(x, sc[idx], color=BLUE, lw=1.0, marker="s", ms=2.6)
-    ax2.axhline(thr, color=GREY, lw=0.8, ls="--")
-    ax2.set_ylabel("Hybrid score\n(percentile)"); ax2.set_ylim(min(0.9, np.nanmin(sc[idx]) - 0.03), 1.06)
+    # score on the percentile scale; filled markers are sub-lots that alarmed (score at or above the threshold)
+    s100 = 100 * sc[idx]; alm = al[idx]
+    ax2 = axs[1]; ax2.plot(x, s100, color=BLUE, lw=1.0, zorder=2)
+    ax2.plot(x[alm], s100[alm], ls="", marker="s", ms=2.8, color=BLUE, zorder=3)
+    ax2.plot(x[~alm], s100[~alm], ls="", marker="s", ms=2.8, mfc="white", mec=BLUE, mew=0.8, zorder=3)
+    ax2.axhline(100 * thr, color=GREY, lw=0.8, ls="--")
+    ax2.set_ylabel("Hybrid score\n(percentile)"); ax2.set_ylim(min(90, np.nanmin(s100) - 6), 106)
+    ax2.set_yticks([50, 100])
     ax3 = axs[2]; bottom = np.zeros(len(idx))
     sty = {"nozzle": (INK, ""), "humidity": ("#ffffff", "////"), "drying": (LGREY, ""), "membrane": ("#ffffff", "...."), "reagent": (MGREY, "")}
     for g in sim.FEATURE_GROUPS:
         v = G[g].values; fc, hh = sty[g]
         ax3.bar(x, v, bottom=bottom, width=0.72, color=fc, edgecolor=INK if fc == "#ffffff" else "white", lw=0.4, hatch=hh)
         bottom += v
-    ax3.set_ylabel("LR cause\ncontribution"); ax3.set_ylim(0, bottom.max() * 1.1)
+    ax3.set_ylabel("LR contribution\n(log-odds)"); ax3.set_ylim(0, bottom.max() * 1.1)
     ncx = x[sub.nc.values[idx] == 1]
     for a in axs:
         a.axvspan(e["start"] - onset - 0.5, e["start"] + e["dur"] - onset - 0.5, color="#eef3fb", zorder=0)
@@ -194,7 +199,8 @@ def fig_story(seed=10):
           Line2D([], [], color=BLUE, lw=1.0, label="first alarm"), Line2D([], [], color=INK, lw=0.8, ls=":", label="first NC"),
           Line2D([], [], color=INK, lw=0.9, ls="-.", label="QC result"), Line2D([], [], color=GREY, lw=0.8, ls="--", label="2% FAR threshold"),
           Patch(fc="#eef3fb", ec="none", label="injected episode"),
-          Line2D([], [], color=GREY, lw=0.8, ls=(0, (2, 1.5)), label="dropout (no reading)")]
+          Line2D([], [], color=GREY, lw=0.8, ls=(0, (2, 1.5)), label="dropout (no reading)"),
+          Line2D([], [], marker="s", ls="", color=BLUE, ms=3.6, label="alarmed sub-lot")]
     cg = [Patch(fc=sty[g][0], ec=INK if sty[g][0] == "#ffffff" else "none", hatch=sty[g][1], lw=0.4, label=CAUSE[g]) for g in sim.FEATURE_GROUPS]
     l1 = fig.legend(handles=ev, loc="upper center", bbox_to_anchor=(0.53, -0.03), ncol=4, frameon=False, handlelength=1.2, handletextpad=0.4,
                     columnspacing=0.7, fontsize=FS, borderaxespad=0.2, labelspacing=0.3)
