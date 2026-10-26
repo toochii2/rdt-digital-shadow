@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "Explainable digital shadow for lateral-flow RDT manufacturing quality: simulator and evaluation code"
+version: 1.0.0
+date-released: 2026-11-01
+license: MIT
+authors:
+  - family-names: "Kirabo"
+    given-names: "Sheba"
+    affiliation: "University of Strathclyde"
+    email: "sheba.kirabo.2026@uni.strath.ac.uk"
+  - family-names: "Alsayegh"
+    given-names: "Ali"
+    affiliation: "University of Strathclyde"
+    email: "a.alsayegh@strath.ac.uk"
+repository-code: "https://github.com/toochii2/rdt-digital-shadow"
+keywords:
+  - digital shadow
+  - explainable artificial intelligence
+  - lateral-flow assay manufacturing
+  - quality decision support
+  - zero-defect manufacturing

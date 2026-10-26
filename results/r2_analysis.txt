@@ -1,0 +1,173 @@
+          pr_auc  far_ok  far_clean  false_alarms  ep_detect  chance_total_ep  chance_fa_ep  early  nc_model  reduction  precision  net_0.5  net_2.0  net_4.0
+model                                                                                                                                                        
+SPC        0.582   0.019      0.012          12.6      0.599            0.272         0.093  0.189      51.6     47.131      0.734    39.70     20.8     -4.4
+SPC-DS     0.844   0.024      0.012          12.2      0.890            0.396         0.118  0.336      28.7     70.594      0.783    62.80     44.5     20.1
+CCS          NaN   0.034      0.017          17.7      0.948            0.437         0.160  0.441      22.3     77.152      0.733    66.45     39.9      4.5
+GoodsIn      NaN   0.008      0.004           4.3      0.164            0.125         0.041  0.039      82.9     15.061      0.625    12.55      6.1     -2.5
+T2         0.766   0.021      0.016          16.9      0.733            0.332         0.101  0.111      45.6     53.279      0.768    43.55     18.2    -15.6
+LR-DS      0.838   0.028      0.014          14.1      0.919            0.401         0.132  0.337      26.3     73.053      0.760    64.25     43.1     14.9
+XGB-DS-u   0.822   0.037      0.024          24.9      0.959            0.427         0.161  0.312      24.2     75.205      0.741    60.95     23.6    -26.2
+XGB-DS     0.820   0.046      0.033          33.7      0.948            0.452         0.186  0.335      23.4     76.025      0.718    57.35      6.8    -60.6
+Hybrid     0.817   0.023      0.012          12.0      0.895            0.391         0.114  0.273      30.1     69.160      0.783    61.50     43.5     19.5
+
+per-type timely detection and NC line-h (sum over 10 reps)
+          ep_nozzle  ep_humidity  ep_drying  ep_membrane  ep_reagent  nc_nozzle  nc_humidity  nc_drying  nc_membrane  nc_reagent
+model                                                                                                                           
+SPC            0.42         1.00       1.00         0.23        0.03        259           72         22           99          64
+SPC-DS         0.98         1.00       1.00         0.70        0.07         85           75         23           46          58
+CCS            1.00         1.00       1.00         0.85        0.50         47           91         26           33          26
+GoodsIn        0.03         0.05       0.07         0.75        0.47        366          216        180           35          32
+T2             0.77         1.00       0.97         0.40        0.03        169           74         50           97          66
+LR-DS          0.98         1.00       0.97         0.87        0.30         74           76         46           38          29
+XGB-DS-u       1.00         1.00       1.00         0.85        0.60         71           73         40           32          26
+XGB-DS         1.00         1.00       1.00         0.85        0.50         67           72         36           32          27
+Hybrid         0.96         1.00       1.00         0.62        0.30         89           75         41           64          32
+episodes per type (sum): {'n_nozzle': 54, 'n_humidity': 36, 'n_drying': 23, 'n_membrane': 14, 'n_reagent': 12} ncsq per type {'ncsq_nozzle': 377, 'ncsq_humidity': 220, 'ncsq_drying': 187, 'ncsq_membrane': 121, 'ncsq_reagent': 71}
+fault-free FAR range           far_clean  far_clean_min  far_clean_max  fa_min  fa_max
+model                                                            
+SPC           0.012          0.002          0.029       2      31
+SPC-DS        0.012          0.002          0.022       2      23
+CCS           0.017          0.011          0.055      11      57
+GoodsIn       0.004          0.000          0.042       0      43
+T2            0.016          0.005          0.025       5      26
+LR-DS         0.014          0.002          0.041       2      44
+XGB-DS-u      0.024          0.000          0.122       0     125
+XGB-DS        0.033          0.001          0.174       1     178
+Hybrid        0.012          0.002          0.019       2      20
+reduction vs CCS {'SPC': (-163.5, 80.5), 'SPC-DS': (-37.4, 50.2), 'CCS': (0, 0), 'GoodsIn': (-299.0, 67.6), 'T2': (-134.1, 78.8), 'LR-DS': (-25.1, 27.9), 'XGB-DS-u': (-16.3, 26.6), 'XGB-DS': (-11.6, 28.3), 'Hybrid': (-50.5, 37.8)}
+reduction vs end-of-batch {'SPC': (46.6, 7.3), 'SPC-DS': (70.9, 7.3), 'CCS': (77.1, 6.0), 'GoodsIn': (15.1, 8.9), 'T2': (52.8, 7.6), 'LR-DS': (73.2, 5.8), 'XGB-DS-u': (75.4, 3.4), 'XGB-DS': (76.3, 4.2), 'Hybrid': (69.0, 3.4)}
+
+attribution
+                  overall  nozzle  humidity  drying  membrane  reagent  macro
+kind    model                                                               
+alarmed Hybrid     0.993   1.000     0.950   0.988     0.906    1.000  0.969
+        LR-DS      0.995   1.000     0.950   0.988     0.938    1.000  0.975
+        Naive-z    0.974   0.998     1.000   0.988     0.598    1.000  0.917
+        SPC-DS     0.997   1.000     0.975   1.000     0.985    1.000  0.992
+all     Hybrid     0.984   1.000     0.950   0.978     0.916    0.750  0.919
+        LR-DS      0.986   1.000     0.975   0.978     0.975    0.700  0.926
+        Naive-z    0.958   0.998     1.000   0.978     0.764    0.693  0.887
+        SPC-DS     0.994   0.996     0.975   0.990     0.991    0.950  0.980
+
+lot clustering
+           top   null  sig   n
+model                        
+Hybrid  0.353  0.310    2  10
+LR-DS   0.477  0.340    5  10
+SPC     0.266  0.300    0  10
+SPC-DS  0.255  0.297    0  10
+
+lot-block threshold arm
+         far_ok  far_ok_std  cover  cover_std  ep_detect  nc_model  quantile
+model                                                                      
+Hybrid   0.011       0.023    1.0        0.3      0.808      39.4      0.99
+LR-DS    0.014       0.028    0.8        0.4      0.855      34.0      0.99
+overlap sub-lots per rep 26.2 test 10.7 lots in validation {'mem': 20.9, 'rea': 8.9}
+
+unseen faults (mean over types and seeds)
+         ep_detect  chance_total_ep  chance_fa_ep
+model                                           
+CCS         0.890            0.411         0.148
+Hybrid      0.652            0.355         0.118
+LR-DS       0.254            0.332         0.131
+SPC-DS      0.793            0.373         0.118
+T2          0.661            0.315         0.101
+XGB-DS      0.289            0.359         0.154
+                    ep  ch_tot  ch_fa  n_ep  n_det   attr
+held_out model                                           
+drying   CCS     1.000   0.462  0.154    23     23    NaN
+         Hybrid  0.967   0.399  0.146    23     22  0.988
+         LR-DS   0.292   0.371  0.161    23      6  0.750
+         SPC-DS  1.000   0.438  0.136    23     23  1.000
+         T2      0.967   0.351  0.124    23     22  0.988
+         XGB-DS  0.475   0.416  0.208    23      8    NaN
+humidity CCS     1.000   0.309  0.119    36     36    NaN
+         Hybrid  1.000   0.273  0.076    36     36  0.950
+         LR-DS   0.183   0.254  0.087    36      5    NaN
+         SPC-DS  1.000   0.284  0.074    36     36  0.975
+         T2      1.000   0.239  0.069    36     36  0.950
+         XGB-DS  0.337   0.297  0.119    36     12    NaN
+membrane CCS     0.850   0.316  0.115    14     12    NaN
+         Hybrid  0.333   0.250  0.066    14      4  0.000
+         LR-DS   0.333   0.249  0.086    14      4  0.000
+         SPC-DS  0.700   0.277  0.086    14     10  0.985
+         T2      0.400   0.230  0.067    14      4  0.000
+         XGB-DS  0.433   0.278  0.116    14      5    NaN
+nozzle   CCS     1.000   0.557  0.217    54     54    NaN
+         Hybrid  0.858   0.484  0.169    54     46  0.994
+         LR-DS   0.364   0.432  0.175    54     20  0.987
+         SPC-DS  1.000   0.498  0.178    54     54  1.000
+         T2      0.904   0.433  0.144    54     48  1.000
+         XGB-DS  0.167   0.415  0.209    54     10    NaN
+reagent  CCS     0.600   0.412  0.136    12      8    NaN
+         Hybrid  0.100   0.368  0.130    12      3  1.000
+         LR-DS   0.100   0.356  0.143    12      3  1.000
+         SPC-DS  0.267   0.366  0.115    12      4  1.000
+         T2      0.033   0.322  0.101    12      1    NaN
+         XGB-DS  0.033   0.388  0.119    12      1    NaN
+LR unseen vs chance total p 0.375 vs chance fa p 0.105
+
+mixture (known, unseen) {'LR-DS': (0.919, 0.254), 'Hybrid': (0.895, 0.652), 'SPC-DS': (0.89, 0.793), 'CCS': (0.948, 0.89), 'T2': (0.733, 0.661)} hybrid break-even novel share 0.056
+
+nonlinear scenario 2
+           pr_auc  ep_detect  nc_model  false_alarms  far_ok
+model                                                      
+Hybrid     0.845      0.898      34.4          16.8   0.021
+LR-DS      0.857      0.920      31.4          19.7   0.025
+LR-snap    0.774      0.843      38.4          14.9   0.018
+SPC        0.657      0.624      57.1          13.2   0.016
+T2         0.791      0.730      52.9          18.2   0.019
+XGB-DS     0.863      0.958      26.3          30.8   0.037
+XGB-DS-u   0.858      0.929      29.5          27.6   0.033
+XGB-snap   0.730      0.791      46.5          21.4   0.023 
+changed NC share 0.097
+NL2 LR minus XGB-u -0.002 ci 0.02 p 0.625
+
+confirmatory family
+                                        test  mean_diff       ci       p  p_holm
+0                  LR-DS vs LR-snap, PR-AUC     0.1002   0.0468  0.0020  0.0117
+1  Hybrid vs LR-DS, unseen timely detection     0.3973   0.1013  0.0020  0.0117
+2                   LR-DS vs CCS, NC line-h     4.0000   6.7106  0.1738  0.6953
+3                 LR-DS vs XGB-DS-u, PR-AUC     0.0161   0.0248  0.3223  0.9668
+4           LR-DS vs XGB-DS-u, false alarms   -10.8000  21.5843  0.5098  1.0000
+5                LR-DS vs SPC-DS, NC line-h    -2.4000   7.5118  0.7266  1.0000
+desc LR-DS SPC-DS pr_auc -0.006 ± 0.017 p 0.625
+desc LR-DS SPC-DS ep_detect 0.028 ± 0.058 p 0.625
+desc LR-DS CCS ep_detect -0.029 ± 0.035 p 0.1562
+desc LR-DS CCS false_alarms -3.6 ± 13.649 p 0.4316
+desc Hybrid CCS nc_model 7.8 ± 6.379 p 0.041
+desc SPC-DS CCS nc_model 6.4 ± 7.595 p 0.0234
+desc LR-DS SPC nc_model -25.3 ± 10.907 p 0.0039
+
+stress mild
+           pr_auc  ep_detect  nc_model  nc_sq  false_alarms  far_ok  net_0.5  net_2.0  reduction
+model                                                                                          
+CCS          NaN      0.913      19.1   63.9           8.8   0.041    40.40     27.2     70.763
+Hybrid     0.655      0.856      24.6   63.9           5.2   0.024    36.70     28.9     62.794
+LR-DS      0.679      0.888      21.5   63.9           3.4   0.027    40.70     35.6     67.045
+SPC        0.493      0.524      38.7   63.9           3.7   0.015    23.35     17.8     39.099
+SPC-DS     0.679      0.793      28.5   63.9           2.7   0.019    34.05     30.0     57.496
+T2         0.600      0.672      38.0   63.9          10.8   0.018    20.50      4.3     42.109
+XGB-DS-u   0.603      0.873      24.1   63.9           8.3   0.028    35.65     23.2     63.404
+
+stress shared
+           pr_auc  ep_detect  nc_model  nc_sq  false_alarms  far_ok  net_0.5  net_2.0  reduction
+model                                                                                          
+CCS          NaN      0.948      21.3   97.6          17.9   0.034    67.35     40.5     78.227
+Hybrid     0.820      0.876      31.4   97.6          10.7   0.022    60.85     44.8     67.055
+LR-DS      0.844      0.911      26.0   97.6          14.1   0.028    64.55     43.4     73.483
+SPC        0.581      0.599      51.6   97.6          12.1   0.018    39.95     21.8     46.563
+SPC-DS     0.844      0.897      28.2   97.6          12.0   0.024    63.40     45.4     71.414
+T2         0.766      0.732      45.7   97.6          17.1   0.021    43.35     17.7     52.582
+XGB-DS-u   0.811      0.951      23.0   97.6          19.6   0.033    64.80     35.4     76.738
+
+stress nonlinear2
+           pr_auc  ep_detect  nc_model  nc_sq  false_alarms  far_ok  net_0.5  net_2.0  reduction
+model                                                                                          
+CCS          NaN      0.919      33.9  106.6          13.7   0.020    65.85     45.3     68.168
+Hybrid     0.845      0.898      34.4  106.6          16.8   0.021    63.80     38.6     67.944
+LR-DS      0.857      0.920      31.4  106.6          19.7   0.025    65.35     35.8     70.932
+SPC        0.657      0.624      57.1  106.6          13.2   0.016    42.90     23.1     46.031
+SPC-DS     0.845      0.840      39.1  106.6          16.5   0.021    59.25     34.5     63.891
+T2         0.791      0.730      52.9  106.6          18.2   0.019    44.60     17.3     49.939
+XGB-DS-u   0.858      0.929      29.5  106.6          27.6   0.033    63.30     21.9     72.379

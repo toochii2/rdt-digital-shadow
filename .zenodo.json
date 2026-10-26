@@ -1,0 +1,23 @@
+{
+  "title": "Explainable digital shadow for lateral-flow RDT manufacturing quality: simulator and evaluation code",
+  "upload_type": "software",
+  "description": "Semi-synthetic simulator of test-line dispensing and drying in lateral-flow rapid diagnostic test manufacturing, with the detectors, explanation checks and evaluation protocol reported in the accompanying ISDIA-2027 paper. All data are simulated; no manufacturer, patient or confidential data are included.",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Kirabo, Sheba",
+      "affiliation": "University of Strathclyde"
+    },
+    {
+      "name": "Alsayegh, Ali",
+      "affiliation": "University of Strathclyde"
+    }
+  ],
+  "keywords": [
+    "digital shadow",
+    "explainable AI",
+    "lateral-flow assay",
+    "quality decision support",
+    "zero-defect manufacturing"
+  ]
+}

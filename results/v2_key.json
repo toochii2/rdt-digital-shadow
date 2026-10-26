@@ -1,0 +1,1112 @@
+{
+ "T": {
+  "SPC": {
+   "pr_auc": 0.5816,
+   "pr_auc_ci": 0.0823,
+   "recall": 0.4847,
+   "recall_ci": 0.1013,
+   "precision": 0.7343,
+   "precision_ci": 0.056,
+   "far": 0.0121,
+   "far_ci": 0.0055,
+   "far_ok": 0.019,
+   "far_ok_ci": 0.0059,
+   "alarm_rate": 0.0645,
+   "alarm_rate_ci": 0.0143,
+   "brier": 0.0564,
+   "brier_ci": 0.0074,
+   "false_alarms": 12.6,
+   "false_alarms_ci": 5.7546,
+   "ep_detect": 0.5986,
+   "ep_detect_ci": 0.1019,
+   "chance_ep_detect": 0.2657,
+   "chance_ep_detect_ci": 0.049,
+   "ep_delay": -0.516,
+   "ep_delay_ci": 0.2773,
+   "lead_vs_release": 8.5862,
+   "lead_vs_release_ci": 0.6962,
+   "nc_model": 51.6,
+   "nc_model_ci": 8.0877,
+   "chance_nc": 78.471,
+   "chance_nc_ci": 8.5684,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 39.7,
+   "net_saving_ci": 10.6201,
+   "fa_top_lot_share": 0.2664,
+   "fa_top_lot_share_ci": 0.0712,
+   "attr": 0.679,
+   "attr_ci": 0.1139,
+   "nc_reduction_pct": 47.1311
+  },
+  "LR-snap": {
+   "pr_auc": 0.738,
+   "pr_auc_ci": 0.0651,
+   "recall": 0.6899,
+   "recall_ci": 0.0772,
+   "precision": 0.7661,
+   "precision_ci": 0.0362,
+   "far": 0.0117,
+   "far_ci": 0.0041,
+   "far_ok": 0.0231,
+   "far_ok_ci": 0.0064,
+   "alarm_rate": 0.0878,
+   "alarm_rate_ci": 0.0145,
+   "brier": 0.0406,
+   "brier_ci": 0.0073,
+   "false_alarms": 12.1,
+   "false_alarms_ci": 4.1773,
+   "ep_detect": 0.8432,
+   "ep_detect_ci": 0.073,
+   "chance_ep_detect": 0.3534,
+   "chance_ep_detect_ci": 0.0512,
+   "ep_delay": -0.5283,
+   "ep_delay_ci": 0.3281,
+   "lead_vs_release": 8.2745,
+   "lead_vs_release_ci": 0.545,
+   "nc_model": 34.4,
+   "nc_model_ci": 7.2577,
+   "chance_nc": 72.166,
+   "chance_nc_ci": 7.0229,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 57.15,
+   "net_saving_ci": 8.9809,
+   "fa_top_lot_share": 0.2821,
+   "fa_top_lot_share_ci": 0.0657,
+   "attr": 0.7538,
+   "attr_ci": 0.0955,
+   "nc_reduction_pct": 64.7541
+  },
+  "XGB-snap": {
+   "pr_auc": 0.6602,
+   "pr_auc_ci": 0.0714,
+   "recall": 0.5883,
+   "recall_ci": 0.0982,
+   "precision": 0.7223,
+   "precision_ci": 0.0472,
+   "far": 0.0175,
+   "far_ci": 0.0078,
+   "far_ok": 0.0258,
+   "far_ok_ci": 0.0077,
+   "alarm_rate": 0.0808,
+   "alarm_rate_ci": 0.0174,
+   "brier": 0.0513,
+   "brier_ci": 0.0089,
+   "false_alarms": 18.1,
+   "false_alarms_ci": 7.9833,
+   "ep_detect": 0.7554,
+   "ep_detect_ci": 0.0753,
+   "chance_ep_detect": 0.3375,
+   "chance_ep_detect_ci": 0.0567,
+   "ep_delay": -0.2683,
+   "ep_delay_ci": 0.2207,
+   "lead_vs_release": 7.9694,
+   "lead_vs_release_ci": 0.5421,
+   "nc_model": 44.5,
+   "nc_model_ci": 9.5634,
+   "chance_nc": 73.189,
+   "chance_nc_ci": 6.1292,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 44.05,
+   "net_saving_ci": 11.6652,
+   "fa_top_lot_share": 0.2976,
+   "fa_top_lot_share_ci": 0.0657,
+   "attr": 0.7744,
+   "attr_ci": 0.1053,
+   "nc_reduction_pct": 54.4057
+  },
+  "T2": {
+   "pr_auc": 0.7655,
+   "pr_auc_ci": 0.0353,
+   "recall": 0.6267,
+   "recall_ci": 0.1098,
+   "precision": 0.7681,
+   "precision_ci": 0.0439,
+   "far": 0.0163,
+   "far_ci": 0.0055,
+   "far_ok": 0.021,
+   "far_ok_ci": 0.0069,
+   "alarm_rate": 0.0798,
+   "alarm_rate_ci": 0.0169,
+   "brier": 0.0427,
+   "brier_ci": 0.006,
+   "false_alarms": 16.9,
+   "false_alarms_ci": 5.5968,
+   "ep_detect": 0.7332,
+   "ep_detect_ci": 0.1175,
+   "chance_ep_detect": 0.3245,
+   "chance_ep_detect_ci": 0.0581,
+   "ep_delay": 0.1343,
+   "ep_delay_ci": 0.1348,
+   "lead_vs_release": 7.7625,
+   "lead_vs_release_ci": 0.4661,
+   "nc_model": 45.6,
+   "nc_model_ci": 8.2616,
+   "chance_nc": 73.814,
+   "chance_nc_ci": 7.1665,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 43.55,
+   "net_saving_ci": 10.5641,
+   "fa_top_lot_share": 0.2948,
+   "fa_top_lot_share_ci": 0.0769,
+   "attr": 0.9822,
+   "attr_ci": 0.0092,
+   "nc_reduction_pct": 53.2787
+  },
+  "LR-DS": {
+   "pr_auc": 0.8382,
+   "pr_auc_ci": 0.0304,
+   "recall": 0.7801,
+   "recall_ci": 0.0449,
+   "precision": 0.7598,
+   "precision_ci": 0.0761,
+   "far": 0.0135,
+   "far_ci": 0.0096,
+   "far_ok": 0.0278,
+   "far_ok_ci": 0.0107,
+   "alarm_rate": 0.1011,
+   "alarm_rate_ci": 0.0155,
+   "brier": 0.0343,
+   "brier_ci": 0.0043,
+   "false_alarms": 14.1,
+   "false_alarms_ci": 10.1248,
+   "ep_detect": 0.9186,
+   "ep_detect_ci": 0.0473,
+   "chance_ep_detect": 0.4065,
+   "chance_ep_detect_ci": 0.0551,
+   "ep_delay": -0.6258,
+   "ep_delay_ci": 0.3464,
+   "lead_vs_release": 8.3987,
+   "lead_vs_release_ci": 0.7744,
+   "nc_model": 26.3,
+   "nc_model_ci": 6.4607,
+   "chance_nc": 68.094,
+   "chance_nc_ci": 7.2474,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 64.25,
+   "net_saving_ci": 11.7693,
+   "fa_top_lot_share": 0.4771,
+   "fa_top_lot_share_ci": 0.1551,
+   "attr": 0.9859,
+   "attr_ci": 0.0063,
+   "nc_reduction_pct": 73.0533
+  },
+  "XGB-DS-u": {
+   "pr_auc": 0.8221,
+   "pr_auc_ci": 0.0397,
+   "recall": 0.8089,
+   "recall_ci": 0.0336,
+   "precision": 0.7407,
+   "precision_ci": 0.1149,
+   "far": 0.024,
+   "far_ci": 0.0278,
+   "far_ok": 0.0374,
+   "far_ok_ci": 0.027,
+   "alarm_rate": 0.1124,
+   "alarm_rate_ci": 0.0289,
+   "brier": 0.0341,
+   "brier_ci": 0.0067,
+   "false_alarms": 24.9,
+   "false_alarms_ci": 28.6072,
+   "ep_detect": 0.9587,
+   "ep_detect_ci": 0.0366,
+   "chance_ep_detect": 0.4332,
+   "chance_ep_detect_ci": 0.0791,
+   "ep_delay": -0.6657,
+   "ep_delay_ci": 0.3773,
+   "lead_vs_release": 8.4603,
+   "lead_vs_release_ci": 0.6906,
+   "nc_model": 24.2,
+   "nc_model_ci": 4.5842,
+   "chance_nc": 66.103,
+   "chance_nc_ci": 8.0282,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 60.95,
+   "net_saving_ci": 17.1607,
+   "fa_top_lot_share": 0.4593,
+   "fa_top_lot_share_ci": 0.2155,
+   "attr": 0.993,
+   "attr_ci": 0.0055,
+   "nc_reduction_pct": 75.2049
+  },
+  "XGB-DS": {
+   "pr_auc": 0.82,
+   "pr_auc_ci": 0.0372,
+   "recall": 0.8131,
+   "recall_ci": 0.0369,
+   "precision": 0.7176,
+   "precision_ci": 0.1376,
+   "far": 0.0325,
+   "far_ci": 0.0392,
+   "far_ok": 0.0459,
+   "far_ok_ci": 0.0388,
+   "alarm_rate": 0.1205,
+   "alarm_rate_ci": 0.0385,
+   "brier": 0.0367,
+   "brier_ci": 0.0088,
+   "false_alarms": 33.7,
+   "false_alarms_ci": 40.319,
+   "ep_detect": 0.9476,
+   "ep_detect_ci": 0.038,
+   "chance_ep_detect": 0.451,
+   "chance_ep_detect_ci": 0.0906,
+   "ep_delay": -0.7614,
+   "ep_delay_ci": 0.4301,
+   "lead_vs_release": 8.535,
+   "lead_vs_release_ci": 0.7795,
+   "nc_model": 23.4,
+   "nc_model_ci": 5.1053,
+   "chance_nc": 65.058,
+   "chance_nc_ci": 9.7029,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 57.35,
+   "net_saving_ci": 22.2395,
+   "fa_top_lot_share": 0.5496,
+   "fa_top_lot_share_ci": 0.204,
+   "attr": 0.9926,
+   "attr_ci": 0.0075,
+   "nc_reduction_pct": 76.0246
+  },
+  "Hybrid": {
+   "pr_auc": 0.8173,
+   "pr_auc_ci": 0.0308,
+   "recall": 0.7593,
+   "recall_ci": 0.0402,
+   "precision": 0.7831,
+   "precision_ci": 0.05,
+   "far": 0.0116,
+   "far_ci": 0.0046,
+   "far_ok": 0.0234,
+   "far_ok_ci": 0.0073,
+   "alarm_rate": 0.095,
+   "alarm_rate_ci": 0.0141,
+   "brier": 0.0347,
+   "brier_ci": 0.0047,
+   "false_alarms": 12.0,
+   "false_alarms_ci": 4.7928,
+   "ep_detect": 0.895,
+   "ep_detect_ci": 0.0429,
+   "chance_ep_detect": 0.3727,
+   "chance_ep_detect_ci": 0.0491,
+   "ep_delay": -0.3975,
+   "ep_delay_ci": 0.3546,
+   "lead_vs_release": 8.1913,
+   "lead_vs_release_ci": 0.679,
+   "nc_model": 30.1,
+   "nc_model_ci": 4.617,
+   "chance_nc": 70.567,
+   "chance_nc_ci": 6.7157,
+   "nc_sq": 97.6,
+   "nc_sq_ci": 12.8464,
+   "net_saving": 61.5,
+   "net_saving_ci": 8.9428,
+   "fa_top_lot_share": 0.3527,
+   "fa_top_lot_share_ci": 0.0474,
+   "attr": 0.984,
+   "attr_ci": 0.0076,
+   "nc_reduction_pct": 69.1598
+  }
+ },
+ "red": {
+  "SPC": [
+   0.4656339833113254,
+   0.07289827802478703
+  ],
+  "LR-snap": [
+   0.6470170399244516,
+   0.054640814275490474
+  ],
+  "XGB-snap": [
+   0.5384694211485263,
+   0.09784184113839724
+  ],
+  "T2": [
+   0.5275787890811956,
+   0.07630456649984613
+  ],
+  "LR-DS": [
+   0.7322173498607989,
+   0.05798721320995237
+  ],
+  "XGB-DS-u": [
+   0.7541916859819577,
+   0.03372644412115778
+  ],
+  "XGB-DS": [
+   0.762933994921997,
+   0.04169355522272355
+  ],
+  "Hybrid": [
+   0.6901388428163298,
+   0.03406333191092214
+  ]
+ },
+ "hourly_qc": 25.5,
+ "abl": {
+  "LR-snap+lot": 0.8207390534206663,
+  "LR-DS-sensor": 0.7396757018341814
+ },
+ "farchk": {
+  "Hybrid": {
+   "test": 0.02340624692302954,
+   "ub_sublot": 0.030395089876943792,
+   "ub_lot": 0.034066310077727945,
+   "cov_sub": 0.8,
+   "cov_lot": 0.8
+  },
+  "LR-DS": {
+   "test": 0.027764846578615082,
+   "ub_sublot": 0.029693241687398654,
+   "ub_lot": 0.036284906349012054,
+   "cov_sub": 0.6,
+   "cov_lot": 0.7
+  },
+  "T2": {
+   "test": 0.021039058014009505,
+   "ub_sublot": 0.03023809304402294,
+   "ub_lot": 0.032888057899018996,
+   "cov_sub": 0.9,
+   "cov_lot": 0.9
+  }
+ },
+ "att": {
+  "Hybrid": {
+   "overall": 0.9840084652532447,
+   "nozzle": 1.0,
+   "humidity": 0.95,
+   "drying": 0.9776176470588235,
+   "membrane": 0.916060606060606,
+   "reagent": 0.75
+  },
+  "LR-DS": {
+   "overall": 0.9858909423820272,
+   "nozzle": 1.0,
+   "humidity": 0.975,
+   "drying": 0.9776176470588235,
+   "membrane": 0.9751515151515152,
+   "reagent": 0.7
+  },
+  "LR-snap": {
+   "overall": 0.7538356776180761,
+   "nozzle": 0.9536720509329205,
+   "humidity": 0.9972222222222221,
+   "drying": 0.9685267379679144,
+   "membrane": 0.0,
+   "reagent": 0.0
+  },
+  "Naive-z": {
+   "overall": 0.9576399690144676,
+   "nozzle": 0.9981481481481481,
+   "humidity": 1.0,
+   "drying": 0.9776176470588235,
+   "membrane": 0.7637601896154528,
+   "reagent": 0.6933333333333334
+  },
+  "SPC": {
+   "overall": 0.6790246781455904,
+   "nozzle": 0.7601196258370171,
+   "humidity": 0.975,
+   "drying": 0.9901176470588234,
+   "membrane": 0.0,
+   "reagent": 0.0
+  },
+  "T2": {
+   "overall": 0.9821562007742521,
+   "nozzle": 1.0,
+   "humidity": 0.95,
+   "drying": 0.9776176470588235,
+   "membrane": 0.8345474481658692,
+   "reagent": 0.9
+  },
+  "XGB-DS": {
+   "overall": 0.9926441881100267,
+   "nozzle": 1.0,
+   "humidity": 0.975,
+   "drying": 0.9960000000000001,
+   "membrane": 0.9947368421052631,
+   "reagent": 0.8
+  },
+  "XGB-DS-u": {
+   "overall": 0.9929974907213938,
+   "nozzle": 1.0,
+   "humidity": 0.975,
+   "drying": 0.9960000000000001,
+   "membrane": 0.9947368421052631,
+   "reagent": 0.75
+  },
+  "XGB-snap": {
+   "overall": 0.7744013297757923,
+   "nozzle": 0.990916344916345,
+   "humidity": 1.0,
+   "drying": 0.984235294117647,
+   "membrane": 0.0,
+   "reagent": 0.0
+  }
+ },
+ "nonlinear": {
+  "g": {
+   "Hybrid": {
+    "pr_auc": 0.8511,
+    "precision": 0.8226,
+    "recall": 0.7767,
+    "ep_detect": 0.905,
+    "nc_model": 33.0,
+    "nc_sq": 104.1,
+    "far_ok": 0.0202,
+    "attr": 0.9827
+   },
+   "LR-DS": {
+    "pr_auc": 0.8684,
+    "precision": 0.7986,
+    "recall": 0.7967,
+    "ep_detect": 0.9326,
+    "nc_model": 29.4,
+    "nc_sq": 104.1,
+    "far_ok": 0.0256,
+    "attr": 0.9836
+   },
+   "LR-snap": {
+    "pr_auc": 0.7744,
+    "precision": 0.813,
+    "recall": 0.7064,
+    "ep_detect": 0.8349,
+    "nc_model": 38.8,
+    "nc_sq": 104.1,
+    "far_ok": 0.019,
+    "attr": 0.7645
+   },
+   "SPC": {
+    "pr_auc": 0.5889,
+    "precision": 0.7539,
+    "recall": 0.4704,
+    "ep_detect": 0.5477,
+    "nc_model": 60.7,
+    "nc_sq": 104.1,
+    "far_ok": 0.0182,
+    "attr": 0.6894
+   },
+   "T2": {
+    "pr_auc": 0.7965,
+    "precision": 0.8052,
+    "recall": 0.6454,
+    "ep_detect": 0.755,
+    "nc_model": 51.0,
+    "nc_sq": 104.1,
+    "far_ok": 0.0191,
+    "attr": 0.9818
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8703,
+    "precision": 0.7386,
+    "recall": 0.8408,
+    "ep_detect": 0.9476,
+    "nc_model": 25.2,
+    "nc_sq": 104.1,
+    "far_ok": 0.0447,
+    "attr": 0.9918
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8694,
+    "precision": 0.7682,
+    "recall": 0.8255,
+    "ep_detect": 0.9587,
+    "nc_model": 25.9,
+    "nc_sq": 104.1,
+    "far_ok": 0.034,
+    "attr": 0.9906
+   },
+   "XGB-snap": {
+    "pr_auc": 0.7133,
+    "precision": 0.7923,
+    "recall": 0.6328,
+    "ep_detect": 0.7711,
+    "nc_model": 46.2,
+    "nc_sq": 104.1,
+    "far_ok": 0.0207,
+    "attr": 0.7933
+   }
+  },
+  "lr_minus_xgbu": -0.0009916934543237389,
+  "p": 0.431640625,
+  "prev": 0.10566666666666666
+ },
+ "shared": {
+  "g": {
+   "Hybrid": {
+    "pr_auc": 0.8203,
+    "precision": 0.7944,
+    "recall": 0.7527,
+    "ep_detect": 0.8762,
+    "nc_model": 31.4,
+    "nc_sq": 97.6,
+    "far_ok": 0.0219,
+    "attr": 0.9458
+   },
+   "LR-DS": {
+    "pr_auc": 0.8444,
+    "precision": 0.763,
+    "recall": 0.7826,
+    "ep_detect": 0.9109,
+    "nc_model": 26.0,
+    "nc_sq": 97.6,
+    "far_ok": 0.0277,
+    "attr": 0.9353
+   },
+   "LR-snap": {
+    "pr_auc": 0.7387,
+    "precision": 0.7736,
+    "recall": 0.6863,
+    "ep_detect": 0.8432,
+    "nc_model": 34.5,
+    "nc_sq": 97.6,
+    "far_ok": 0.022,
+    "attr": 0.7133
+   },
+   "SPC": {
+    "pr_auc": 0.5813,
+    "precision": 0.7394,
+    "recall": 0.4829,
+    "ep_detect": 0.5986,
+    "nc_model": 51.6,
+    "nc_sq": 97.6,
+    "far_ok": 0.0185,
+    "attr": 0.679
+   },
+   "T2": {
+    "pr_auc": 0.7656,
+    "precision": 0.7693,
+    "recall": 0.6231,
+    "ep_detect": 0.7322,
+    "nc_model": 45.7,
+    "nc_sq": 97.6,
+    "far_ok": 0.0213,
+    "attr": 0.9832
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8153,
+    "precision": 0.7194,
+    "recall": 0.7885,
+    "ep_detect": 0.9322,
+    "nc_model": 24.2,
+    "nc_sq": 97.6,
+    "far_ok": 0.0442,
+    "attr": 0.8291
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8106,
+    "precision": 0.7467,
+    "recall": 0.7947,
+    "ep_detect": 0.951,
+    "nc_model": 23.0,
+    "nc_sq": 97.6,
+    "far_ok": 0.0329,
+    "attr": 0.8291
+   },
+   "XGB-snap": {
+    "pr_auc": 0.6671,
+    "precision": 0.744,
+    "recall": 0.6055,
+    "ep_detect": 0.7953,
+    "nc_model": 40.2,
+    "nc_sq": 97.6,
+    "far_ok": 0.0243,
+    "attr": 0.7143
+   }
+  },
+  "lr_minus_xgbu": 0.03378002899916247,
+  "p": 0.01953125,
+  "prev": 0.09708333333333334
+ },
+ "lowprev": {
+  "g": {
+   "Hybrid": {
+    "pr_auc": 0.5811,
+    "precision": 0.5595,
+    "recall": 0.5453,
+    "ep_detect": 0.8056,
+    "nc_model": 14.9,
+    "nc_sq": 44.0,
+    "far_ok": 0.0266,
+    "attr": 0.9491
+   },
+   "LR-DS": {
+    "pr_auc": 0.6146,
+    "precision": 0.5439,
+    "recall": 0.5833,
+    "ep_detect": 0.8322,
+    "nc_model": 14.9,
+    "nc_sq": 44.0,
+    "far_ok": 0.0372,
+    "attr": 0.9615
+   },
+   "LR-snap": {
+    "pr_auc": 0.5004,
+    "precision": 0.5965,
+    "recall": 0.457,
+    "ep_detect": 0.7056,
+    "nc_model": 17.4,
+    "nc_sq": 44.0,
+    "far_ok": 0.0177,
+    "attr": 0.541
+   },
+   "SPC": {
+    "pr_auc": 0.4381,
+    "precision": 0.546,
+    "recall": 0.3987,
+    "ep_detect": 0.5889,
+    "nc_model": 21.7,
+    "nc_sq": 44.0,
+    "far_ok": 0.0195,
+    "attr": 0.5216
+   },
+   "T2": {
+    "pr_auc": 0.5622,
+    "precision": 0.5936,
+    "recall": 0.4586,
+    "ep_detect": 0.6889,
+    "nc_model": 19.1,
+    "nc_sq": 44.0,
+    "far_ok": 0.0182,
+    "attr": 0.933
+   },
+   "XGB-DS": {
+    "pr_auc": 0.4495,
+    "precision": 0.4694,
+    "recall": 0.4445,
+    "ep_detect": 0.7422,
+    "nc_model": 19.1,
+    "nc_sq": 44.0,
+    "far_ok": 0.0343,
+    "attr": 0.867
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.438,
+    "precision": 0.461,
+    "recall": 0.4168,
+    "ep_detect": 0.6778,
+    "nc_model": 21.8,
+    "nc_sq": 44.0,
+    "far_ok": 0.0307,
+    "attr": 0.8596
+   },
+   "XGB-snap": {
+    "pr_auc": 0.3564,
+    "precision": 0.4499,
+    "recall": 0.338,
+    "ep_detect": 0.6111,
+    "nc_model": 21.9,
+    "nc_sq": 44.0,
+    "far_ok": 0.0255,
+    "attr": 0.5389
+   }
+  },
+  "lr_minus_xgbu": 0.176600152984869,
+  "p": 0.00390625,
+  "prev": 0.05383333333333333
+ },
+ "lofo": {
+  "by_model": {
+   "Hybrid": {
+    "recall": 0.653001862369893,
+    "ep_detect": 0.6516666666666667,
+    "chance": 0.3541919047619047
+   },
+   "LR-DS": {
+    "recall": 0.23229408635046195,
+    "ep_detect": 0.2544047619047619,
+    "chance": 0.3536809523809524
+   },
+   "T2": {
+    "recall": 0.6685646472115416,
+    "ep_detect": 0.6608333333333333,
+    "chance": 0.31015714285714285
+   },
+   "XGB-DS": {
+    "recall": 0.18421957795448843,
+    "ep_detect": 0.2891190476190476,
+    "chance": 0.35759380952380954
+   }
+  },
+  "by_type": {
+   "drying": {
+    "Hybrid": 0.9666666666666666,
+    "LR-DS": 0.29166666666666663,
+    "T2": 0.9666666666666666,
+    "XGB-DS": 0.475
+   },
+   "humidity": {
+    "Hybrid": 1.0,
+    "LR-DS": 0.18333333333333332,
+    "T2": 1.0,
+    "XGB-DS": 0.33666666666666667
+   },
+   "membrane": {
+    "Hybrid": 0.3333333333333333,
+    "LR-DS": 0.3333333333333333,
+    "T2": 0.4,
+    "XGB-DS": 0.4333333333333333
+   },
+   "nozzle": {
+    "Hybrid": 0.8583333333333334,
+    "LR-DS": 0.3636904761904762,
+    "T2": 0.9041666666666666,
+    "XGB-DS": 0.16726190476190475
+   },
+   "reagent": {
+    "Hybrid": 0.1,
+    "LR-DS": 0.1,
+    "T2": 0.03333333333333333,
+    "XGB-DS": 0.03333333333333333
+   }
+  },
+  "hybrid_attr": 0.9473560049019608
+ },
+ "stab": {
+  "LR-DS": {
+   "kendall_tau": 0.45167755991285413,
+   "local_agreement": 0.9839159403329459
+  },
+  "T2": {
+   "kendall_tau": 0.7956136528685549,
+   "local_agreement": 0.9960643159534452
+  },
+  "XGB-DS": {
+   "kendall_tau": 0.4857237637042999,
+   "local_agreement": 0.9751757988929945
+  }
+ },
+ "robust": {
+  "mild_faults": {
+   "pr_auc|Hybrid": 0.6552378100737762,
+   "pr_auc|LR-DS": 0.6787508093350278,
+   "pr_auc|LR-snap": 0.650248920688544,
+   "pr_auc|SPC": 0.4931225837399181,
+   "pr_auc|T2": 0.6004487183155874,
+   "pr_auc|XGB-DS": 0.5939739810392146,
+   "pr_auc|XGB-DS-u": 0.6034102851579807,
+   "pr_auc|XGB-snap": 0.5339761295102002,
+   "ep_detect|Hybrid": 0.8564102564102564,
+   "ep_detect|LR-DS": 0.8878205128205128,
+   "ep_detect|LR-snap": 0.8320512820512821,
+   "ep_detect|SPC": 0.523974358974359,
+   "ep_detect|T2": 0.6721794871794872,
+   "ep_detect|XGB-DS": 0.8253846153846153,
+   "ep_detect|XGB-DS-u": 0.8732051282051282,
+   "ep_detect|XGB-snap": 0.7715384615384615
+  },
+  "miss_20": {
+   "pr_auc|Hybrid": 0.8013486817427815,
+   "pr_auc|LR-DS": 0.8189160186011029,
+   "pr_auc|LR-snap": 0.7210990411475123,
+   "pr_auc|SPC": 0.5766064219728118,
+   "pr_auc|T2": 0.7541411612862458,
+   "pr_auc|XGB-DS": 0.7996269234850638,
+   "pr_auc|XGB-DS-u": 0.7968144874279444,
+   "pr_auc|XGB-snap": 0.6348980299027206,
+   "ep_detect|Hybrid": 0.8826478668390433,
+   "ep_detect|LR-DS": 0.9186796128707894,
+   "ep_detect|LR-snap": 0.8199065395388925,
+   "ep_detect|SPC": 0.6119357358327947,
+   "ep_detect|T2": 0.7343219852043381,
+   "ep_detect|XGB-DS": 0.8891603821015586,
+   "ep_detect|XGB-DS-u": 0.882493715434892,
+   "ep_detect|XGB-snap": 0.7403001328736623
+  },
+  "noise_x1.5": {
+   "pr_auc|Hybrid": 0.7519301476231216,
+   "pr_auc|LR-DS": 0.7779956782706955,
+   "pr_auc|LR-snap": 0.6758845064771105,
+   "pr_auc|SPC": 0.5452344284327467,
+   "pr_auc|T2": 0.7101686352412319,
+   "pr_auc|XGB-DS": 0.7469942802556429,
+   "pr_auc|XGB-DS-u": 0.7343192532321761,
+   "pr_auc|XGB-snap": 0.6010509691220441,
+   "ep_detect|Hybrid": 0.8541052574876105,
+   "ep_detect|LR-DS": 0.8884642318465849,
+   "ep_detect|LR-snap": 0.8106908532643826,
+   "ep_detect|SPC": 0.5882347554406377,
+   "ep_detect|T2": 0.7051917690152985,
+   "ep_detect|XGB-DS": 0.8868465847877612,
+   "ep_detect|XGB-DS-u": 0.8878722258134022,
+   "ep_detect|XGB-snap": 0.7378794979530274
+  }
+ },
+ "containment": [
+  {
+   "lab_delay": 2,
+   "response": 1,
+   "model": "SPC",
+   "reduction": 46.86999698678783
+  },
+  {
+   "lab_delay": 2,
+   "response": 1,
+   "model": "T2",
+   "reduction": 51.65845416293193
+  },
+  {
+   "lab_delay": 2,
+   "response": 1,
+   "model": "LR-DS",
+   "reduction": 70.4306231882525
+  },
+  {
+   "lab_delay": 2,
+   "response": 1,
+   "model": "XGB-DS-u",
+   "reduction": 72.80502063605306
+  },
+  {
+   "lab_delay": 2,
+   "response": 1,
+   "model": "Hybrid",
+   "reduction": 66.57004121470335
+  },
+  {
+   "lab_delay": 2,
+   "response": 2,
+   "model": "SPC",
+   "reduction": 38.36744655001329
+  },
+  {
+   "lab_delay": 2,
+   "response": 2,
+   "model": "T2",
+   "reduction": 41.828205671899504
+  },
+  {
+   "lab_delay": 2,
+   "response": 2,
+   "model": "LR-DS",
+   "reduction": 60.49510473384877
+  },
+  {
+   "lab_delay": 2,
+   "response": 2,
+   "model": "XGB-DS-u",
+   "reduction": 62.20260386446969
+  },
+  {
+   "lab_delay": 2,
+   "response": 2,
+   "model": "Hybrid",
+   "reduction": 56.324857262789706
+  },
+  {
+   "lab_delay": 2,
+   "response": 4,
+   "model": "SPC",
+   "reduction": 23.282297334257745
+  },
+  {
+   "lab_delay": 2,
+   "response": 4,
+   "model": "T2",
+   "reduction": 24.5010895426622
+  },
+  {
+   "lab_delay": 2,
+   "response": 4,
+   "model": "LR-DS",
+   "reduction": 40.96372004052018
+  },
+  {
+   "lab_delay": 2,
+   "response": 4,
+   "model": "XGB-DS-u",
+   "reduction": 42.66806435979566
+  },
+  {
+   "lab_delay": 2,
+   "response": 4,
+   "model": "Hybrid",
+   "reduction": 37.04690267778931
+  },
+  {
+   "lab_delay": 4,
+   "response": 1,
+   "model": "SPC",
+   "reduction": 46.56339833113254
+  },
+  {
+   "lab_delay": 4,
+   "response": 1,
+   "model": "T2",
+   "reduction": 52.75787890811956
+  },
+  {
+   "lab_delay": 4,
+   "response": 1,
+   "model": "LR-DS",
+   "reduction": 73.2217349860799
+  },
+  {
+   "lab_delay": 4,
+   "response": 1,
+   "model": "XGB-DS-u",
+   "reduction": 75.41916859819577
+  },
+  {
+   "lab_delay": 4,
+   "response": 1,
+   "model": "Hybrid",
+   "reduction": 69.01388428163298
+  },
+  {
+   "lab_delay": 4,
+   "response": 2,
+   "model": "SPC",
+   "reduction": 38.41448306145826
+  },
+  {
+   "lab_delay": 4,
+   "response": 2,
+   "model": "T2",
+   "reduction": 43.15144061412403
+  },
+  {
+   "lab_delay": 4,
+   "response": 2,
+   "model": "LR-DS",
+   "reduction": 63.50887561547036
+  },
+  {
+   "lab_delay": 4,
+   "response": 2,
+   "model": "XGB-DS-u",
+   "reduction": 65.23073710352509
+  },
+  {
+   "lab_delay": 4,
+   "response": 2,
+   "model": "Hybrid",
+   "reduction": 58.96247851962298
+  },
+  {
+   "lab_delay": 4,
+   "response": 4,
+   "model": "SPC",
+   "reduction": 23.37459821662578
+  },
+  {
+   "lab_delay": 4,
+   "response": 4,
+   "model": "T2",
+   "reduction": 25.828906345215152
+  },
+  {
+   "lab_delay": 4,
+   "response": 4,
+   "model": "LR-DS",
+   "reduction": 43.46904750636026
+  },
+  {
+   "lab_delay": 4,
+   "response": 4,
+   "model": "XGB-DS-u",
+   "reduction": 45.60359792750691
+  },
+  {
+   "lab_delay": 4,
+   "response": 4,
+   "model": "Hybrid",
+   "reduction": 39.399681917607616
+  },
+  {
+   "lab_delay": 8,
+   "response": 1,
+   "model": "SPC",
+   "reduction": 44.45605058942184
+  },
+  {
+   "lab_delay": 8,
+   "response": 1,
+   "model": "T2",
+   "reduction": 52.243106231457695
+  },
+  {
+   "lab_delay": 8,
+   "response": 1,
+   "model": "LR-DS",
+   "reduction": 74.697286857042
+  },
+  {
+   "lab_delay": 8,
+   "response": 1,
+   "model": "XGB-DS-u",
+   "reduction": 77.46371480586515
+  },
+  {
+   "lab_delay": 8,
+   "response": 1,
+   "model": "Hybrid",
+   "reduction": 70.07684406117497
+  },
+  {
+   "lab_delay": 8,
+   "response": 2,
+   "model": "SPC",
+   "reduction": 37.23837931111936
+  },
+  {
+   "lab_delay": 8,
+   "response": 2,
+   "model": "T2",
+   "reduction": 43.19195591643621
+  },
+  {
+   "lab_delay": 8,
+   "response": 2,
+   "model": "LR-DS",
+   "reduction": 65.177849376263
+  },
+  {
+   "lab_delay": 8,
+   "response": 2,
+   "model": "XGB-DS-u",
+   "reduction": 67.56720439510907
+  },
+  {
+   "lab_delay": 8,
+   "response": 2,
+   "model": "Hybrid",
+   "reduction": 60.27678415422288
+  },
+  {
+   "lab_delay": 8,
+   "response": 4,
+   "model": "SPC",
+   "reduction": 23.43167636146824
+  },
+  {
+   "lab_delay": 8,
+   "response": 4,
+   "model": "T2",
+   "reduction": 26.301954776116787
+  },
+  {
+   "lab_delay": 8,
+   "response": 4,
+   "model": "LR-DS",
+   "reduction": 44.837696839097205
+  },
+  {
+   "lab_delay": 8,
+   "response": 4,
+   "model": "XGB-DS-u",
+   "reduction": 47.42752537102219
+  },
+  {
+   "lab_delay": 8,
+   "response": 4,
+   "model": "Hybrid",
+   "reduction": 40.38047986190236
+  }
+ ]
+}

@@ -1,0 +1,2972 @@
+[
+ {
+  "seed": 10,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.603220329452403,
+    "roc_auc": 0.7774730458221024,
+    "recall": 0.4714285714285714,
+    "precision": 0.7586206896551724,
+    "f1": 0.5814977973568283,
+    "far": 0.016569200779727095,
+    "far_ok": 0.01981132075471698,
+    "alarm_rate": 0.0725,
+    "brier": 0.06606414705590655,
+    "false_alarms": 17,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": -0.4,
+    "lead_vs_release": 8.0,
+    "nc_sq": 115,
+    "nc_model": 57,
+    "n_episodes": 15,
+    "net_saving": 49.5,
+    "fa_top_lot_share": 0.17647058823529413
+   },
+   "T2": {
+    "pr_auc": 0.7752628647458153,
+    "roc_auc": 0.9407816711590298,
+    "recall": 0.5071428571428571,
+    "precision": 0.7395833333333334,
+    "f1": 0.6016949152542372,
+    "far": 0.023391812865497075,
+    "far_ok": 0.02358490566037736,
+    "alarm_rate": 0.08,
+    "brier": 0.048951042670894306,
+    "false_alarms": 24,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": 0.5,
+    "lead_vs_release": 6.9,
+    "nc_sq": 115,
+    "nc_model": 66,
+    "n_episodes": 15,
+    "net_saving": 37.0,
+    "fa_top_lot_share": 0.25
+   },
+   "LR-snap": {
+    "pr_auc": 0.6362226371631822,
+    "roc_auc": 0.7846765498652292,
+    "recall": 0.5214285714285715,
+    "precision": 0.7448979591836735,
+    "f1": 0.6134453781512604,
+    "far": 0.022417153996101363,
+    "far_ok": 0.02358490566037736,
+    "alarm_rate": 0.08166666666666667,
+    "brier": 0.05963387602095094,
+    "false_alarms": 23,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": 0.1,
+    "lead_vs_release": 7.3,
+    "nc_sq": 115,
+    "nc_model": 62,
+    "n_episodes": 15,
+    "net_saving": 41.5,
+    "fa_top_lot_share": 0.17391304347826086
+   },
+   "XGB-snap": {
+    "pr_auc": 0.6296077113205686,
+    "roc_auc": 0.7946832884097037,
+    "recall": 0.5285714285714286,
+    "precision": 0.7326732673267327,
+    "f1": 0.6141078838174273,
+    "far": 0.023391812865497075,
+    "far_ok": 0.02547169811320755,
+    "alarm_rate": 0.08416666666666667,
+    "brier": 0.06043984740972519,
+    "false_alarms": 24,
+    "ep_detect": 0.7333333333333333,
+    "ep_delay": 0.2727272727272727,
+    "lead_vs_release": 7.181818181818182,
+    "nc_sq": 115,
+    "nc_model": 59,
+    "n_episodes": 15,
+    "net_saving": 44.0,
+    "fa_top_lot_share": 0.16666666666666666
+   },
+   "LR-DS": {
+    "pr_auc": 0.8358536190203678,
+    "roc_auc": 0.9282479784366579,
+    "recall": 0.7571428571428571,
+    "precision": 0.8091603053435115,
+    "f1": 0.7822878228782287,
+    "far": 0.004873294346978557,
+    "far_ok": 0.02358490566037736,
+    "alarm_rate": 0.10916666666666666,
+    "brier": 0.04246674159434612,
+    "false_alarms": 5,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -1.1428571428571428,
+    "lead_vs_release": 8.571428571428571,
+    "nc_sq": 115,
+    "nc_model": 33,
+    "n_episodes": 15,
+    "net_saving": 79.5,
+    "fa_top_lot_share": 1.0
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8497209548375657,
+    "roc_auc": 0.9410849056603774,
+    "recall": 0.8285714285714286,
+    "precision": 0.7785234899328859,
+    "f1": 0.8027681660899654,
+    "far": 0.008771929824561403,
+    "far_ok": 0.031132075471698113,
+    "alarm_rate": 0.12416666666666666,
+    "brier": 0.03992877155542374,
+    "false_alarms": 9,
+    "ep_detect": 1.0,
+    "ep_delay": -1.3333333333333333,
+    "lead_vs_release": 8.733333333333333,
+    "nc_sq": 115,
+    "nc_model": 25,
+    "n_episodes": 15,
+    "net_saving": 85.5,
+    "fa_top_lot_share": 0.7777777777777778
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8541447500119739,
+    "roc_auc": 0.9420619946091644,
+    "recall": 0.8785714285714286,
+    "precision": 0.7454545454545455,
+    "f1": 0.8065573770491803,
+    "far": 0.016569200779727095,
+    "far_ok": 0.03962264150943396,
+    "alarm_rate": 0.1375,
+    "brier": 0.03888092190027237,
+    "false_alarms": 17,
+    "ep_detect": 1.0,
+    "ep_delay": -1.4666666666666666,
+    "lead_vs_release": 8.866666666666667,
+    "nc_sq": 115,
+    "nc_model": 23,
+    "n_episodes": 15,
+    "net_saving": 83.5,
+    "fa_top_lot_share": 0.4117647058823529
+   },
+   "Hybrid": {
+    "pr_auc": 0.8151395191996457,
+    "roc_auc": 0.9453066037735849,
+    "recall": 0.7428571428571429,
+    "precision": 0.7375886524822695,
+    "f1": 0.7402135231316725,
+    "far": 0.016569200779727095,
+    "far_ok": 0.03490566037735849,
+    "alarm_rate": 0.1175,
+    "brier": 0.0447538286184831,
+    "false_alarms": 17,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -1.2857142857142858,
+    "lead_vs_release": 8.714285714285714,
+    "nc_sq": 115,
+    "nc_model": 31,
+    "n_episodes": 15,
+    "net_saving": 75.5,
+    "fa_top_lot_share": 0.35294117647058826
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.4803921568627451,
+    "n": 102,
+    "nozzle": 0.8125,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 1.0,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.5392156862745098,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.5392156862745098,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9901960784313726,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9722222222222222,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 1.0,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 1.0,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.9901960784313726,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9722222222222222,
+    "reagent": 1.0
+   },
+   "Hybrid": {
+    "overall": 0.9901960784313726,
+    "n": 102,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9722222222222222,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8211963643369228,
+   "LR-DS-sensor": 0.6349404842903843
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.02358490566037736,
+    "ub_sublot": 0.03125,
+    "ub_lot": 0.03518338896162564
+   },
+   "Hybrid": {
+    "test": 0.03490566037735849,
+    "ub_sublot": 0.029829545454545456,
+    "ub_lot": 0.03381890751034394
+   },
+   "T2": {
+    "test": 0.02358490566037736,
+    "ub_sublot": 0.029829545454545456,
+    "ub_lot": 0.03230987983702509
+   }
+  },
+  "hourly_qc_nc": 28,
+  "tuned": {
+   "LR_DS_C": 5.0,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    3,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9807692307692307,
+  "dq": {
+   "sample_completeness": 0.9787256944444445,
+   "sublot_feature_completeness": 0.9982638888888888,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.1095,
+  "test_prev": 0.11666666666666667,
+  "n_nc_by_cause": {
+   "nozzle": 32,
+   "humidity": 7,
+   "drying": 16,
+   "membrane": 36,
+   "reagent": 11
+  }
+ },
+ {
+  "seed": 11,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.5455832744684801,
+    "roc_auc": 0.7804305283757338,
+    "recall": 0.4857142857142857,
+    "precision": 0.6891891891891891,
+    "f1": 0.5698324022346368,
+    "far": 0.012229539040451553,
+    "far_ok": 0.021004566210045664,
+    "alarm_rate": 0.06166666666666667,
+    "brier": 0.05618688514878736,
+    "false_alarms": 13,
+    "ep_detect": 0.3333333333333333,
+    "ep_delay": -1.5,
+    "lead_vs_release": 8.25,
+    "nc_sq": 88,
+    "nc_model": 63,
+    "n_episodes": 12,
+    "net_saving": 18.5,
+    "fa_top_lot_share": 0.3076923076923077
+   },
+   "T2": {
+    "pr_auc": 0.8278882457209723,
+    "roc_auc": 0.9393694281365513,
+    "recall": 0.7714285714285715,
+    "precision": 0.8181818181818182,
+    "f1": 0.7941176470588236,
+    "far": 0.01317027281279398,
+    "far_ok": 0.01643835616438356,
+    "alarm_rate": 0.0825,
+    "brier": 0.036637193286578044,
+    "false_alarms": 14,
+    "ep_detect": 0.8333333333333334,
+    "ep_delay": 0.9,
+    "lead_vs_release": 6.3,
+    "nc_sq": 88,
+    "nc_model": 39,
+    "n_episodes": 12,
+    "net_saving": 42.0,
+    "fa_top_lot_share": 0.42857142857142855
+   },
+   "LR-snap": {
+    "pr_auc": 0.8400117220687252,
+    "roc_auc": 0.9141552511415524,
+    "recall": 0.780952380952381,
+    "precision": 0.82,
+    "f1": 0.8,
+    "far": 0.00940733772342427,
+    "far_ok": 0.01643835616438356,
+    "alarm_rate": 0.08333333333333333,
+    "brier": 0.032939453313766694,
+    "false_alarms": 10,
+    "ep_detect": 0.8333333333333334,
+    "ep_delay": 0.1,
+    "lead_vs_release": 7.4,
+    "nc_sq": 88,
+    "nc_model": 29,
+    "n_episodes": 12,
+    "net_saving": 54.0,
+    "fa_top_lot_share": 0.2
+   },
+   "XGB-snap": {
+    "pr_auc": 0.7225800117433473,
+    "roc_auc": 0.8894020439225918,
+    "recall": 0.580952380952381,
+    "precision": 0.8714285714285714,
+    "f1": 0.6971428571428571,
+    "far": 0.0028222013170272815,
+    "far_ok": 0.00821917808219178,
+    "alarm_rate": 0.058333333333333334,
+    "brier": 0.04113202914595604,
+    "false_alarms": 3,
+    "ep_detect": 0.8333333333333334,
+    "ep_delay": 0.4,
+    "lead_vs_release": 6.8,
+    "nc_sq": 88,
+    "nc_model": 36,
+    "n_episodes": 12,
+    "net_saving": 50.5,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "LR-DS": {
+    "pr_auc": 0.8623647418220678,
+    "roc_auc": 0.923826918895412,
+    "recall": 0.8476190476190476,
+    "precision": 0.5933333333333334,
+    "f1": 0.6980392156862746,
+    "far": 0.04985888993414864,
+    "far_ok": 0.05570776255707763,
+    "alarm_rate": 0.125,
+    "brier": 0.03123568077948563,
+    "false_alarms": 53,
+    "ep_detect": 0.9166666666666666,
+    "ep_delay": -0.18181818181818182,
+    "lead_vs_release": 7.363636363636363,
+    "nc_sq": 88,
+    "nc_model": 22,
+    "n_episodes": 12,
+    "net_saving": 39.5,
+    "fa_top_lot_share": 0.5094339622641509
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8046157081933216,
+    "roc_auc": 0.9226962383126767,
+    "recall": 0.819047619047619,
+    "precision": 0.5029239766081871,
+    "f1": 0.6231884057971014,
+    "far": 0.07055503292568203,
+    "far_ok": 0.0776255707762557,
+    "alarm_rate": 0.1425,
+    "brier": 0.05722369626164436,
+    "false_alarms": 75,
+    "ep_detect": 1.0,
+    "ep_delay": -0.5833333333333334,
+    "lead_vs_release": 7.583333333333333,
+    "nc_sq": 88,
+    "nc_model": 17,
+    "n_episodes": 12,
+    "net_saving": 33.5,
+    "fa_top_lot_share": 0.5466666666666666
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8084860718596429,
+    "roc_auc": 0.9273320287018918,
+    "recall": 0.8476190476190476,
+    "precision": 0.41203703703703703,
+    "f1": 0.5545171339563862,
+    "far": 0.10724365004703669,
+    "far_ok": 0.11598173515981736,
+    "alarm_rate": 0.18,
+    "brier": 0.06956624239683151,
+    "false_alarms": 114,
+    "ep_detect": 1.0,
+    "ep_delay": -0.75,
+    "lead_vs_release": 7.75,
+    "nc_sq": 88,
+    "nc_model": 15,
+    "n_episodes": 12,
+    "net_saving": 16.0,
+    "fa_top_lot_share": 0.47368421052631576
+   },
+   "Hybrid": {
+    "pr_auc": 0.8696993604655764,
+    "roc_auc": 0.9382474450967602,
+    "recall": 0.819047619047619,
+    "precision": 0.7166666666666667,
+    "f1": 0.7644444444444445,
+    "far": 0.024459078080903106,
+    "far_ok": 0.031050228310502283,
+    "alarm_rate": 0.1,
+    "brier": 0.02821551562375414,
+    "false_alarms": 26,
+    "ep_detect": 0.9166666666666666,
+    "ep_delay": 0.09090909090909091,
+    "lead_vs_release": 7.090909090909091,
+    "nc_sq": 88,
+    "nc_model": 25,
+    "n_episodes": 12,
+    "net_saving": 50.0,
+    "fa_top_lot_share": 0.4230769230769231
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.7432432432432432,
+    "n": 74,
+    "nozzle": 0.6739130434782609,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.972972972972973,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.8513513513513513,
+    "n": 74,
+    "nozzle": 0.8478260869565217,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.918918918918919,
+    "n": 74,
+    "nozzle": 0.9565217391304348,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.972972972972973,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.5,
+    "reagent": 0.5
+   },
+   "XGB-DS-u": {
+    "overall": 1.0,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 1.0,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.972972972972973,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.5,
+    "reagent": 0.5
+   },
+   "Hybrid": {
+    "overall": 0.972972972972973,
+    "n": 74,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8224579083447561,
+   "LR-DS-sensor": 0.8222394092413875
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.05570776255707763,
+    "ub_sublot": 0.02939944134078206,
+    "ub_lot": 0.04232601768621464
+   },
+   "Hybrid": {
+    "test": 0.031050228310502283,
+    "ub_sublot": 0.029329608938547486,
+    "ub_lot": 0.036157106763274924
+   },
+   "T2": {
+    "test": 0.01643835616438356,
+    "ub_sublot": 0.030726256983240222,
+    "ub_lot": 0.03230857261756138
+   }
+  },
+  "hourly_qc_nc": 23,
+  "tuned": {
+   "LR_DS_C": 5.0,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.8953488372093024,
+  "dq": {
+   "sample_completeness": 0.9782222222222221,
+   "sublot_feature_completeness": 0.9979305555555555,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.08525,
+  "test_prev": 0.0875,
+  "n_nc_by_cause": {
+   "nozzle": 46,
+   "humidity": 8,
+   "drying": 16,
+   "membrane": 2,
+   "reagent": 2
+  }
+ },
+ {
+  "seed": 12,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.6572025716685436,
+    "roc_auc": 0.8197074915824916,
+    "recall": 0.5555555555555556,
+    "precision": 0.8247422680412371,
+    "f1": 0.6639004149377593,
+    "far": 0.010773751224289911,
+    "far_ok": 0.016098484848484848,
+    "alarm_rate": 0.08083333333333333,
+    "brier": 0.06377486216663944,
+    "false_alarms": 11,
+    "ep_detect": 0.5882352941176471,
+    "ep_delay": -0.2,
+    "lead_vs_release": 7.8,
+    "nc_sq": 123,
+    "nc_model": 73,
+    "n_episodes": 17,
+    "net_saving": 44.5,
+    "fa_top_lot_share": 0.18181818181818182
+   },
+   "T2": {
+    "pr_auc": 0.8366378959062761,
+    "roc_auc": 0.9476141624579124,
+    "recall": 0.7430555555555556,
+    "precision": 0.7925925925925926,
+    "f1": 0.7670250896057348,
+    "far": 0.023506366307541625,
+    "far_ok": 0.026515151515151516,
+    "alarm_rate": 0.1125,
+    "brier": 0.03774481811350023,
+    "false_alarms": 24,
+    "ep_detect": 0.8823529411764706,
+    "ep_delay": 0.3333333333333333,
+    "lead_vs_release": 7.333333333333333,
+    "nc_sq": 123,
+    "nc_model": 48,
+    "n_episodes": 17,
+    "net_saving": 63.0,
+    "fa_top_lot_share": 0.20833333333333334
+   },
+   "LR-snap": {
+    "pr_auc": 0.8122031910172698,
+    "roc_auc": 0.87533538510101,
+    "recall": 0.7638888888888888,
+    "precision": 0.8661417322834646,
+    "f1": 0.8118081180811808,
+    "far": 0.011753183153770812,
+    "far_ok": 0.016098484848484848,
+    "alarm_rate": 0.10583333333333333,
+    "brier": 0.038022226288669435,
+    "false_alarms": 12,
+    "ep_detect": 0.8823529411764706,
+    "ep_delay": 0.13333333333333333,
+    "lead_vs_release": 7.533333333333333,
+    "nc_sq": 123,
+    "nc_model": 45,
+    "n_episodes": 17,
+    "net_saving": 72.0,
+    "fa_top_lot_share": 0.25
+   },
+   "XGB-snap": {
+    "pr_auc": 0.7514992587301786,
+    "roc_auc": 0.8747501052188551,
+    "recall": 0.7222222222222222,
+    "precision": 0.8,
+    "f1": 0.759124087591241,
+    "far": 0.019588638589618023,
+    "far_ok": 0.02462121212121212,
+    "alarm_rate": 0.10833333333333334,
+    "brier": 0.04538482800126076,
+    "false_alarms": 20,
+    "ep_detect": 0.8235294117647058,
+    "ep_delay": -0.07142857142857142,
+    "lead_vs_release": 7.571428571428571,
+    "nc_sq": 123,
+    "nc_model": 51,
+    "n_episodes": 17,
+    "net_saving": 62.0,
+    "fa_top_lot_share": 0.3
+   },
+   "LR-DS": {
+    "pr_auc": 0.9129278772112293,
+    "roc_auc": 0.9621738215488216,
+    "recall": 0.8819444444444444,
+    "precision": 0.8355263157894737,
+    "f1": 0.8581081081081081,
+    "far": 0.01860920666013712,
+    "far_ok": 0.023674242424242424,
+    "alarm_rate": 0.12666666666666668,
+    "brier": 0.026775060876212984,
+    "false_alarms": 19,
+    "ep_detect": 0.9411764705882353,
+    "ep_delay": -0.125,
+    "lead_vs_release": 7.875,
+    "nc_sq": 123,
+    "nc_model": 32,
+    "n_episodes": 17,
+    "net_saving": 81.5,
+    "fa_top_lot_share": 0.2631578947368421
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.9119744511573128,
+    "roc_auc": 0.9513297032828283,
+    "recall": 0.8888888888888888,
+    "precision": 0.8421052631578947,
+    "f1": 0.8648648648648649,
+    "far": 0.013712047012732615,
+    "far_ok": 0.022727272727272728,
+    "alarm_rate": 0.12666666666666668,
+    "brier": 0.025126084685325623,
+    "false_alarms": 14,
+    "ep_detect": 0.9411764705882353,
+    "ep_delay": -0.4375,
+    "lead_vs_release": 8.1875,
+    "nc_sq": 123,
+    "nc_model": 29,
+    "n_episodes": 17,
+    "net_saving": 87.0,
+    "fa_top_lot_share": 0.2857142857142857
+   },
+   "XGB-DS": {
+    "pr_auc": 0.9091904080620445,
+    "roc_auc": 0.9528093434343434,
+    "recall": 0.8888888888888888,
+    "precision": 0.8311688311688312,
+    "f1": 0.8590604026845637,
+    "far": 0.015670910871694418,
+    "far_ok": 0.02462121212121212,
+    "alarm_rate": 0.12833333333333333,
+    "brier": 0.0223923958837986,
+    "false_alarms": 16,
+    "ep_detect": 0.9411764705882353,
+    "ep_delay": -0.4375,
+    "lead_vs_release": 8.1875,
+    "nc_sq": 123,
+    "nc_model": 29,
+    "n_episodes": 17,
+    "net_saving": 86.0,
+    "fa_top_lot_share": 0.25
+   },
+   "Hybrid": {
+    "pr_auc": 0.877201679742818,
+    "roc_auc": 0.951188315446128,
+    "recall": 0.8472222222222222,
+    "precision": 0.8356164383561644,
+    "f1": 0.8413793103448277,
+    "far": 0.01762977473065622,
+    "far_ok": 0.022727272727272728,
+    "alarm_rate": 0.12166666666666667,
+    "brier": 0.029565944516772157,
+    "false_alarms": 18,
+    "ep_detect": 0.8823529411764706,
+    "ep_delay": -0.13333333333333333,
+    "lead_vs_release": 7.8,
+    "nc_sq": 123,
+    "nc_model": 41,
+    "n_episodes": 17,
+    "net_saving": 73.0,
+    "fa_top_lot_share": 0.2777777777777778
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.7741935483870968,
+    "n": 124,
+    "nozzle": 0.8412698412698413,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.9838709677419355,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "LR-snap": {
+    "overall": 0.8387096774193549,
+    "n": 124,
+    "nozzle": 0.9682539682539683,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.8548387096774194,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9838709677419355,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS-u": {
+    "overall": 0.9838709677419355,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS": {
+    "overall": 0.9838709677419355,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "Naive-z": {
+    "overall": 0.9274193548387096,
+    "n": 124,
+    "nozzle": 0.9841269841269841,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.625,
+    "reagent": 0.0
+   },
+   "Hybrid": {
+    "overall": 0.9838709677419355,
+    "n": 124,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.9029125578942967,
+   "LR-DS-sensor": 0.8235304350858966
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.023674242424242424,
+    "ub_sublot": 0.029535864978902954,
+    "ub_lot": 0.034248106485923684
+   },
+   "Hybrid": {
+    "test": 0.022727272727272728,
+    "ub_sublot": 0.030942334739803096,
+    "ub_lot": 0.032446657183499275
+   },
+   "T2": {
+    "test": 0.026515151515151516,
+    "ub_sublot": 0.030942334739803096,
+    "ub_lot": 0.03556219932653611
+   }
+  },
+  "hourly_qc_nc": 31,
+  "tuned": {
+   "LR_DS_C": 0.05,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9918032786885246,
+  "dq": {
+   "sample_completeness": 0.9780590277777779,
+   "sublot_feature_completeness": 0.9974583333333334,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.1065,
+  "test_prev": 0.12,
+  "n_nc_by_cause": {
+   "nozzle": 63,
+   "humidity": 25,
+   "drying": 18,
+   "membrane": 16,
+   "reagent": 2
+  }
+ },
+ {
+  "seed": 13,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.7388331975658757,
+    "roc_auc": 0.8423056722689075,
+    "recall": 0.6517857142857143,
+    "precision": 0.7849462365591398,
+    "f1": 0.7121951219512195,
+    "far": 0.010406811731315043,
+    "far_ok": 0.01838235294117647,
+    "alarm_rate": 0.0775,
+    "brier": 0.041854009396368144,
+    "false_alarms": 11,
+    "ep_detect": 0.7692307692307693,
+    "ep_delay": -0.1,
+    "lead_vs_release": 7.2,
+    "nc_sq": 95,
+    "nc_model": 38,
+    "n_episodes": 13,
+    "net_saving": 51.5,
+    "fa_top_lot_share": 0.18181818181818182
+   },
+   "T2": {
+    "pr_auc": 0.8098130054390621,
+    "roc_auc": 0.9048138786764707,
+    "recall": 0.75,
+    "precision": 0.8842105263157894,
+    "f1": 0.8115942028985507,
+    "far": 0.005676442762535478,
+    "far_ok": 0.01011029411764706,
+    "alarm_rate": 0.07916666666666666,
+    "brier": 0.036357419580378615,
+    "false_alarms": 6,
+    "ep_detect": 0.7692307692307693,
+    "ep_delay": 0.5,
+    "lead_vs_release": 6.5,
+    "nc_sq": 95,
+    "nc_model": 42,
+    "n_episodes": 13,
+    "net_saving": 50.0,
+    "fa_top_lot_share": 0.5
+   },
+   "LR-snap": {
+    "pr_auc": 0.8482695905269295,
+    "roc_auc": 0.9184775472689077,
+    "recall": 0.7857142857142857,
+    "precision": 0.822429906542056,
+    "f1": 0.8036529680365296,
+    "far": 0.011352885525070956,
+    "far_ok": 0.017463235294117647,
+    "alarm_rate": 0.08916666666666667,
+    "brier": 0.027807424481757402,
+    "false_alarms": 12,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": 0.09090909090909091,
+    "lead_vs_release": 7.2727272727272725,
+    "nc_sq": 95,
+    "nc_model": 31,
+    "n_episodes": 13,
+    "net_saving": 58.0,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "XGB-snap": {
+    "pr_auc": 0.8220526686949153,
+    "roc_auc": 0.9047400210084034,
+    "recall": 0.8035714285714286,
+    "precision": 0.9090909090909091,
+    "f1": 0.8530805687203793,
+    "far": 0.002838221381267739,
+    "far_ok": 0.008272058823529412,
+    "alarm_rate": 0.0825,
+    "brier": 0.028623558580875397,
+    "false_alarms": 3,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": 0.09090909090909091,
+    "lead_vs_release": 7.2727272727272725,
+    "nc_sq": 95,
+    "nc_model": 31,
+    "n_episodes": 13,
+    "net_saving": 62.5,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "LR-DS": {
+    "pr_auc": 0.8630618776050554,
+    "roc_auc": 0.9573595063025211,
+    "recall": 0.7321428571428571,
+    "precision": 0.9010989010989011,
+    "f1": 0.8078817733990148,
+    "far": 0.002838221381267739,
+    "far_ok": 0.008272058823529412,
+    "alarm_rate": 0.07583333333333334,
+    "brier": 0.0288921362414735,
+    "false_alarms": 3,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": 0.5454545454545454,
+    "lead_vs_release": 6.545454545454546,
+    "nc_sq": 95,
+    "nc_model": 39,
+    "n_episodes": 13,
+    "net_saving": 54.5,
+    "fa_top_lot_share": 0.6666666666666666
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8823771491939726,
+    "roc_auc": 0.956719406512605,
+    "recall": 0.8125,
+    "precision": 0.883495145631068,
+    "f1": 0.8465116279069768,
+    "far": 0.003784295175023652,
+    "far_ok": 0.011029411764705883,
+    "alarm_rate": 0.08583333333333333,
+    "brier": 0.027150414884090424,
+    "false_alarms": 4,
+    "ep_detect": 0.9230769230769231,
+    "ep_delay": 0.0,
+    "lead_vs_release": 7.25,
+    "nc_sq": 95,
+    "nc_model": 26,
+    "n_episodes": 13,
+    "net_saving": 67.0,
+    "fa_top_lot_share": 0.25
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8728136914804907,
+    "roc_auc": 0.9528623949579832,
+    "recall": 0.8125,
+    "precision": 0.875,
+    "f1": 0.8425925925925926,
+    "far": 0.005676442762535478,
+    "far_ok": 0.011948529411764705,
+    "alarm_rate": 0.08666666666666667,
+    "brier": 0.0239688903093338,
+    "false_alarms": 6,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": -0.09090909090909091,
+    "lead_vs_release": 7.454545454545454,
+    "nc_sq": 95,
+    "nc_model": 29,
+    "n_episodes": 13,
+    "net_saving": 63.0,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "Hybrid": {
+    "pr_auc": 0.8553156673451018,
+    "roc_auc": 0.9493418461134453,
+    "recall": 0.7589285714285714,
+    "precision": 0.8762886597938144,
+    "f1": 0.8133971291866029,
+    "far": 0.005676442762535478,
+    "far_ok": 0.011029411764705883,
+    "alarm_rate": 0.08083333333333333,
+    "brier": 0.028770413172546087,
+    "false_alarms": 6,
+    "ep_detect": 0.7692307692307693,
+    "ep_delay": 0.3,
+    "lead_vs_release": 6.7,
+    "nc_sq": 95,
+    "nc_model": 40,
+    "n_episodes": 13,
+    "net_saving": 52.0,
+    "fa_top_lot_share": 0.5
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.8350515463917526,
+    "n": 97,
+    "nozzle": 0.75,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.979381443298969,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.8,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.865979381443299,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 0.9722222222222222,
+    "drying": 0.9666666666666667,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.8865979381443299,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 1.0,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 0.9896907216494846,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS": {
+    "overall": 1.0,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.9587628865979382,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.6,
+    "reagent": 1.0
+   },
+   "Hybrid": {
+    "overall": 1.0,
+    "n": 97,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8764610317507957,
+   "LR-DS-sensor": 0.8286160275298611
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.008272058823529412,
+    "ub_sublot": 0.02932551319648094,
+    "ub_lot": 0.03443149317360099
+   },
+   "Hybrid": {
+    "test": 0.011029411764705883,
+    "ub_sublot": 0.030791788856304986,
+    "ub_lot": 0.03289744645799011
+   },
+   "T2": {
+    "test": 0.01011029411764706,
+    "ub_sublot": 0.02932551319648094,
+    "ub_lot": 0.03221106273500891
+   }
+  },
+  "hourly_qc_nc": 25,
+  "tuned": {
+   "LR_DS_C": 0.5,
+   "XGB_DS": [
+    3,
+    300
+   ],
+   "XGB_DSu": [
+    5,
+    150
+   ]
+  },
+  "hybrid_lr_share": 0.5411764705882353,
+  "dq": {
+   "sample_completeness": 0.9779027777777777,
+   "sublot_feature_completeness": 0.9969999999999999,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.11575,
+  "test_prev": 0.09333333333333334,
+  "n_nc_by_cause": {
+   "nozzle": 20,
+   "humidity": 36,
+   "drying": 30,
+   "membrane": 10,
+   "reagent": 1
+  }
+ },
+ {
+  "seed": 14,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.6206965114741657,
+    "roc_auc": 0.8049308186026937,
+    "recall": 0.4861111111111111,
+    "precision": 0.8433734939759037,
+    "f1": 0.6167400881057269,
+    "far": 0.011661807580174927,
+    "far_ok": 0.01231060606060606,
+    "alarm_rate": 0.06916666666666667,
+    "brier": 0.06608653001539852,
+    "false_alarms": 12,
+    "ep_detect": 0.4666666666666667,
+    "ep_delay": 0.2857142857142857,
+    "lead_vs_release": 8.142857142857142,
+    "nc_sq": 118,
+    "nc_model": 81,
+    "n_episodes": 15,
+    "net_saving": 31.0,
+    "fa_top_lot_share": 0.25
+   },
+   "T2": {
+    "pr_auc": 0.7838634579573099,
+    "roc_auc": 0.9205005787037037,
+    "recall": 0.6805555555555556,
+    "precision": 0.7716535433070866,
+    "f1": 0.7232472324723247,
+    "far": 0.026239067055393587,
+    "far_ok": 0.027462121212121212,
+    "alarm_rate": 0.10583333333333333,
+    "brier": 0.051123314248028094,
+    "false_alarms": 27,
+    "ep_detect": 0.8666666666666667,
+    "ep_delay": 0.8461538461538461,
+    "lead_vs_release": 6.230769230769231,
+    "nc_sq": 118,
+    "nc_model": 61,
+    "n_episodes": 15,
+    "net_saving": 43.5,
+    "fa_top_lot_share": 0.2222222222222222
+   },
+   "LR-snap": {
+    "pr_auc": 0.8104280907303523,
+    "roc_auc": 0.8881128998316499,
+    "recall": 0.7430555555555556,
+    "precision": 0.8359375,
+    "f1": 0.7867647058823529,
+    "far": 0.014577259475218658,
+    "far_ok": 0.019886363636363636,
+    "alarm_rate": 0.10666666666666667,
+    "brier": 0.03799053582918231,
+    "false_alarms": 15,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": 0.07142857142857142,
+    "lead_vs_release": 7.142857142857143,
+    "nc_sq": 118,
+    "nc_model": 42,
+    "n_episodes": 15,
+    "net_saving": 68.5,
+    "fa_top_lot_share": 0.26666666666666666
+   },
+   "XGB-snap": {
+    "pr_auc": 0.7402556964792403,
+    "roc_auc": 0.8841540404040403,
+    "recall": 0.5972222222222222,
+    "precision": 0.819047619047619,
+    "f1": 0.6907630522088354,
+    "far": 0.015549076773566569,
+    "far_ok": 0.017992424242424244,
+    "alarm_rate": 0.0875,
+    "brier": 0.05824260786175728,
+    "false_alarms": 16,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": 0.5,
+    "lead_vs_release": 6.5,
+    "nc_sq": 118,
+    "nc_model": 68,
+    "n_episodes": 15,
+    "net_saving": 42.0,
+    "fa_top_lot_share": 0.25
+   },
+   "LR-DS": {
+    "pr_auc": 0.8929087678463836,
+    "roc_auc": 0.9486860795454545,
+    "recall": 0.8194444444444444,
+    "precision": 0.8428571428571429,
+    "f1": 0.8309859154929577,
+    "far": 0.013605442176870748,
+    "far_ok": 0.020833333333333332,
+    "alarm_rate": 0.11666666666666667,
+    "brier": 0.03253148437909819,
+    "false_alarms": 14,
+    "ep_detect": 1.0,
+    "ep_delay": 0.06666666666666667,
+    "lead_vs_release": 7.4,
+    "nc_sq": 118,
+    "nc_model": 33,
+    "n_episodes": 15,
+    "net_saving": 78.0,
+    "fa_top_lot_share": 0.6428571428571429
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.9044287739462133,
+    "roc_auc": 0.9411300505050505,
+    "recall": 0.875,
+    "precision": 0.875,
+    "f1": 0.875,
+    "far": 0.011661807580174927,
+    "far_ok": 0.017045454545454544,
+    "alarm_rate": 0.12,
+    "brier": 0.023555701598525047,
+    "false_alarms": 12,
+    "ep_detect": 1.0,
+    "ep_delay": -0.2,
+    "lead_vs_release": 7.666666666666667,
+    "nc_sq": 118,
+    "nc_model": 27,
+    "n_episodes": 15,
+    "net_saving": 85.0,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "XGB-DS": {
+    "pr_auc": 0.9073722816187955,
+    "roc_auc": 0.9481336805555556,
+    "recall": 0.8611111111111112,
+    "precision": 0.9051094890510949,
+    "f1": 0.8825622775800712,
+    "far": 0.0058309037900874635,
+    "far_ok": 0.01231060606060606,
+    "alarm_rate": 0.11416666666666667,
+    "brier": 0.024758756160736084,
+    "false_alarms": 6,
+    "ep_detect": 1.0,
+    "ep_delay": -0.2,
+    "lead_vs_release": 7.666666666666667,
+    "nc_sq": 118,
+    "nc_model": 27,
+    "n_episodes": 15,
+    "net_saving": 88.0,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "Hybrid": {
+    "pr_auc": 0.8693558535014574,
+    "roc_auc": 0.9360466645622896,
+    "recall": 0.8125,
+    "precision": 0.8068965517241379,
+    "f1": 0.8096885813148789,
+    "far": 0.02040816326530612,
+    "far_ok": 0.026515151515151516,
+    "alarm_rate": 0.12083333333333333,
+    "brier": 0.03535218032430117,
+    "false_alarms": 21,
+    "ep_detect": 1.0,
+    "ep_delay": 0.2,
+    "lead_vs_release": 7.266666666666667,
+    "nc_sq": 118,
+    "nc_model": 35,
+    "n_episodes": 15,
+    "net_saving": 72.5,
+    "fa_top_lot_share": 0.38095238095238093
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.7672413793103449,
+    "n": 116,
+    "nozzle": 0.8387096774193549,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.9827586206896551,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.8666666666666667,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.8189655172413793,
+    "n": 116,
+    "nozzle": 0.9516129032258065,
+    "humidity": 1.0,
+    "drying": 0.9090909090909091,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.8448275862068966,
+    "n": 116,
+    "nozzle": 0.9838709677419355,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9913793103448276,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9333333333333333,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 1.0,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 1.0,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.9568965517241379,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.6666666666666666,
+    "reagent": 1.0
+   },
+   "Hybrid": {
+    "overall": 0.9913793103448276,
+    "n": 116,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9333333333333333,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8581560768036289,
+   "LR-DS-sensor": 0.8076693429289546
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.020833333333333332,
+    "ub_sublot": 0.029411764705882353,
+    "ub_lot": 0.03731756728821267
+   },
+   "Hybrid": {
+    "test": 0.026515151515151516,
+    "ub_sublot": 0.029411764705882353,
+    "ub_lot": 0.03613139420677218
+   },
+   "T2": {
+    "test": 0.027462121212121212,
+    "ub_sublot": 0.03081232492997199,
+    "ub_lot": 0.031200425642058032
+   }
+  },
+  "hourly_qc_nc": 30,
+  "tuned": {
+   "LR_DS_C": 0.05,
+   "XGB_DS": [
+    3,
+    300
+   ],
+   "XGB_DSu": [
+    5,
+    150
+   ]
+  },
+  "hybrid_lr_share": 0.7777777777777778,
+  "dq": {
+   "sample_completeness": 0.9781597222222222,
+   "sublot_feature_completeness": 0.9970555555555557,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.108,
+  "test_prev": 0.12,
+  "n_nc_by_cause": {
+   "nozzle": 62,
+   "humidity": 26,
+   "drying": 11,
+   "membrane": 15,
+   "reagent": 2
+  }
+ },
+ {
+  "seed": 15,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.5344450965958103,
+    "roc_auc": 0.7330728098030921,
+    "recall": 0.41721854304635764,
+    "precision": 0.75,
+    "f1": 0.5361702127659573,
+    "far": 0.010816125860373648,
+    "far_ok": 0.02001906577693041,
+    "alarm_rate": 0.07,
+    "brier": 0.0796966184716032,
+    "false_alarms": 11,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": -0.6,
+    "lead_vs_release": 9.1,
+    "nc_sq": 128,
+    "nc_model": 59,
+    "n_episodes": 15,
+    "net_saving": 63.5,
+    "fa_top_lot_share": 0.2727272727272727
+   },
+   "T2": {
+    "pr_auc": 0.832769444173207,
+    "roc_auc": 0.9383013781652662,
+    "recall": 0.6754966887417219,
+    "precision": 0.796875,
+    "f1": 0.7311827956989249,
+    "far": 0.01966568338249754,
+    "far_ok": 0.02478551000953289,
+    "alarm_rate": 0.10666666666666667,
+    "brier": 0.04377267177984316,
+    "false_alarms": 20,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": 0.21428571428571427,
+    "lead_vs_release": 7.428571428571429,
+    "nc_sq": 128,
+    "nc_model": 44,
+    "n_episodes": 15,
+    "net_saving": 74.0,
+    "fa_top_lot_share": 0.2
+   },
+   "LR-snap": {
+    "pr_auc": 0.7581829896799207,
+    "roc_auc": 0.827233757788875,
+    "recall": 0.7086092715231788,
+    "precision": 0.823076923076923,
+    "f1": 0.7615658362989323,
+    "far": 0.012782694198623401,
+    "far_ok": 0.0219256434699714,
+    "alarm_rate": 0.10833333333333334,
+    "brier": 0.04611035487940705,
+    "false_alarms": 13,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -0.42857142857142855,
+    "lead_vs_release": 8.071428571428571,
+    "nc_sq": 128,
+    "nc_model": 37,
+    "n_episodes": 15,
+    "net_saving": 84.5,
+    "fa_top_lot_share": 0.23076923076923078
+   },
+   "XGB-snap": {
+    "pr_auc": 0.7081482640001933,
+    "roc_auc": 0.8277956300229169,
+    "recall": 0.6688741721854304,
+    "precision": 0.7709923664122137,
+    "f1": 0.7163120567375886,
+    "far": 0.02359882005899705,
+    "far_ok": 0.028598665395614873,
+    "alarm_rate": 0.10916666666666666,
+    "brier": 0.0538790188729763,
+    "false_alarms": 24,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": 0.0,
+    "lead_vs_release": 7.642857142857143,
+    "nc_sq": 128,
+    "nc_model": 41,
+    "n_episodes": 15,
+    "net_saving": 75.0,
+    "fa_top_lot_share": 0.20833333333333334
+   },
+   "LR-DS": {
+    "pr_auc": 0.872565009515719,
+    "roc_auc": 0.942000896470306,
+    "recall": 0.7152317880794702,
+    "precision": 0.9230769230769231,
+    "f1": 0.8059701492537314,
+    "far": 0.0029498525073746312,
+    "far_ok": 0.008579599618684462,
+    "alarm_rate": 0.0975,
+    "brier": 0.03741248769291664,
+    "false_alarms": 3,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -0.2857142857142857,
+    "lead_vs_release": 7.928571428571429,
+    "nc_sq": 128,
+    "nc_model": 38,
+    "n_episodes": 15,
+    "net_saving": 88.5,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8609242098222104,
+    "roc_auc": 0.9417104905965317,
+    "recall": 0.7549668874172185,
+    "precision": 0.8636363636363636,
+    "f1": 0.8056537102473499,
+    "far": 0.007866273352999017,
+    "far_ok": 0.017159199237368923,
+    "alarm_rate": 0.11,
+    "brier": 0.036648526787757874,
+    "false_alarms": 8,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -0.7142857142857143,
+    "lead_vs_release": 8.357142857142858,
+    "nc_sq": 128,
+    "nc_model": 32,
+    "n_episodes": 15,
+    "net_saving": 92.0,
+    "fa_top_lot_share": 0.25
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8718812537776994,
+    "roc_auc": 0.9522724259622852,
+    "recall": 0.7417218543046358,
+    "precision": 0.875,
+    "f1": 0.8028673835125448,
+    "far": 0.007866273352999017,
+    "far_ok": 0.015252621544327931,
+    "alarm_rate": 0.10666666666666667,
+    "brier": 0.03517165407538414,
+    "false_alarms": 8,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -0.42857142857142855,
+    "lead_vs_release": 8.071428571428571,
+    "nc_sq": 128,
+    "nc_model": 36,
+    "n_episodes": 15,
+    "net_saving": 88.0,
+    "fa_top_lot_share": 0.25
+   },
+   "Hybrid": {
+    "pr_auc": 0.858098896676952,
+    "roc_auc": 0.9486297261977664,
+    "recall": 0.7152317880794702,
+    "precision": 0.864,
+    "f1": 0.782608695652174,
+    "far": 0.00983284169124877,
+    "far_ok": 0.016205910390848427,
+    "alarm_rate": 0.10416666666666667,
+    "brier": 0.03975813147317491,
+    "false_alarms": 10,
+    "ep_detect": 0.9333333333333333,
+    "ep_delay": -0.14285714285714285,
+    "lead_vs_release": 7.785714285714286,
+    "nc_sq": 128,
+    "nc_model": 39,
+    "n_episodes": 15,
+    "net_saving": 84.0,
+    "fa_top_lot_share": 0.3
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.5877862595419847,
+    "n": 131,
+    "nozzle": 0.5714285714285714,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.9770992366412213,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.7272727272727273,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.7557251908396947,
+    "n": 131,
+    "nozzle": 0.9206349206349206,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.7938931297709924,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9770992366412213,
+    "n": 131,
+    "nozzle": 0.9841269841269841,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.8181818181818182,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 1.0,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 0.9923664122137404,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.9090909090909091,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.9847328244274809,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.8181818181818182,
+    "reagent": 1.0
+   },
+   "Hybrid": {
+    "overall": 0.9770992366412213,
+    "n": 131,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.7272727272727273,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8157858908121924,
+   "LR-DS-sensor": 0.781890418880969
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.008579599618684462,
+    "ub_sublot": 0.03132102272727266,
+    "ub_lot": 0.038917342979016584
+   },
+   "Hybrid": {
+    "test": 0.016205910390848427,
+    "ub_sublot": 0.029829545454545456,
+    "ub_lot": 0.0330681603408876
+   },
+   "T2": {
+    "test": 0.02478551000953289,
+    "ub_sublot": 0.03125,
+    "ub_lot": 0.032124811230256324
+   }
+  },
+  "hourly_qc_nc": 25,
+  "tuned": {
+   "LR_DS_C": 5.0,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9629629629629629,
+  "dq": {
+   "sample_completeness": 0.9782048611111112,
+   "sublot_feature_completeness": 0.9974722222222222,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.11225,
+  "test_prev": 0.12583333333333332,
+  "n_nc_by_cause": {
+   "nozzle": 63,
+   "humidity": 12,
+   "drying": 29,
+   "membrane": 11,
+   "reagent": 16
+  }
+ },
+ {
+  "seed": 16,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.6682991117581585,
+    "roc_auc": 0.8290164750110571,
+    "recall": 0.5808823529411765,
+    "precision": 0.7745098039215687,
+    "f1": 0.6638655462184875,
+    "far": 0.016617790811339198,
+    "far_ok": 0.021616541353383457,
+    "alarm_rate": 0.085,
+    "brier": 0.05652761271106224,
+    "false_alarms": 17,
+    "ep_detect": 0.625,
+    "ep_delay": 0.0,
+    "lead_vs_release": 7.5,
+    "nc_sq": 106,
+    "nc_model": 62,
+    "n_episodes": 16,
+    "net_saving": 35.5,
+    "fa_top_lot_share": 0.17647058823529413
+   },
+   "T2": {
+    "pr_auc": 0.8114672242601532,
+    "roc_auc": 0.9246461742591774,
+    "recall": 0.6838235294117647,
+    "precision": 0.808695652173913,
+    "f1": 0.7410358565737052,
+    "far": 0.019550342130987292,
+    "far_ok": 0.020676691729323307,
+    "alarm_rate": 0.09583333333333334,
+    "brier": 0.04345735338827817,
+    "false_alarms": 20,
+    "ep_detect": 0.75,
+    "ep_delay": 0.4166666666666667,
+    "lead_vs_release": 7.5,
+    "nc_sq": 106,
+    "nc_model": 49,
+    "n_episodes": 16,
+    "net_saving": 47.0,
+    "fa_top_lot_share": 0.3
+   },
+   "LR-snap": {
+    "pr_auc": 0.7771031943332264,
+    "roc_auc": 0.8779093874391862,
+    "recall": 0.7205882352941176,
+    "precision": 0.7716535433070866,
+    "f1": 0.7452471482889733,
+    "far": 0.019550342130987292,
+    "far_ok": 0.02725563909774436,
+    "alarm_rate": 0.10583333333333333,
+    "brier": 0.04164210007913431,
+    "false_alarms": 20,
+    "ep_detect": 0.8125,
+    "ep_delay": -0.07692307692307693,
+    "lead_vs_release": 7.769230769230769,
+    "nc_sq": 106,
+    "nc_model": 38,
+    "n_episodes": 16,
+    "net_saving": 58.0,
+    "fa_top_lot_share": 0.25
+   },
+   "XGB-snap": {
+    "pr_auc": 0.726430760348295,
+    "roc_auc": 0.8355263157894737,
+    "recall": 0.6911764705882353,
+    "precision": 0.6861313868613139,
+    "f1": 0.6886446886446886,
+    "far": 0.03812316715542522,
+    "far_ok": 0.040413533834586464,
+    "alarm_rate": 0.11416666666666667,
+    "brier": 0.04452626034617424,
+    "false_alarms": 39,
+    "ep_detect": 0.6875,
+    "ep_delay": 0.09090909090909091,
+    "lead_vs_release": 7.818181818181818,
+    "nc_sq": 106,
+    "nc_model": 53,
+    "n_episodes": 16,
+    "net_saving": 33.5,
+    "fa_top_lot_share": 0.28205128205128205
+   },
+   "LR-DS": {
+    "pr_auc": 0.8489945425568625,
+    "roc_auc": 0.9379768354710304,
+    "recall": 0.8235294117647058,
+    "precision": 0.6627218934911243,
+    "f1": 0.7344262295081968,
+    "far": 0.042033235581622676,
+    "far_ok": 0.05357142857142857,
+    "alarm_rate": 0.14083333333333334,
+    "brier": 0.03882631459031188,
+    "false_alarms": 43,
+    "ep_detect": 0.9375,
+    "ep_delay": 0.2,
+    "lead_vs_release": 7.466666666666667,
+    "nc_sq": 106,
+    "nc_model": 34,
+    "n_episodes": 16,
+    "net_saving": 50.5,
+    "fa_top_lot_share": 0.32558139534883723
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8592751791126345,
+    "roc_auc": 0.9332223020787263,
+    "recall": 0.8823529411764706,
+    "precision": 0.5381165919282511,
+    "f1": 0.6685236768802229,
+    "far": 0.09090909090909091,
+    "far_ok": 0.09680451127819549,
+    "alarm_rate": 0.18583333333333332,
+    "brier": 0.03544863313436508,
+    "false_alarms": 93,
+    "ep_detect": 0.9375,
+    "ep_delay": -0.4,
+    "lead_vs_release": 8.0,
+    "nc_sq": 106,
+    "nc_model": 30,
+    "n_episodes": 16,
+    "net_saving": 29.5,
+    "fa_top_lot_share": 0.5268817204301075
+   },
+   "XGB-DS": {
+    "pr_auc": 0.854344113891429,
+    "roc_auc": 0.9295803847854932,
+    "recall": 0.875,
+    "precision": 0.42805755395683454,
+    "f1": 0.5748792270531401,
+    "far": 0.14173998044965788,
+    "far_ok": 0.14943609022556392,
+    "alarm_rate": 0.23166666666666666,
+    "brier": 0.037962183356285095,
+    "false_alarms": 145,
+    "ep_detect": 0.9375,
+    "ep_delay": -0.5333333333333333,
+    "lead_vs_release": 8.133333333333333,
+    "nc_sq": 106,
+    "nc_model": 28,
+    "n_episodes": 16,
+    "net_saving": 5.5,
+    "fa_top_lot_share": 0.5862068965517241
+   },
+   "Hybrid": {
+    "pr_auc": 0.8127025992744805,
+    "roc_auc": 0.9301125055285272,
+    "recall": 0.7794117647058824,
+    "precision": 0.8346456692913385,
+    "f1": 0.806083650190114,
+    "far": 0.013685239491691105,
+    "far_ok": 0.019736842105263157,
+    "alarm_rate": 0.10583333333333333,
+    "brier": 0.03747942333224513,
+    "false_alarms": 14,
+    "ep_detect": 0.875,
+    "ep_delay": 0.35714285714285715,
+    "lead_vs_release": 7.142857142857143,
+    "nc_sq": 106,
+    "nc_model": 41,
+    "n_episodes": 16,
+    "net_saving": 58.0,
+    "fa_top_lot_share": 0.35714285714285715
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.775,
+    "n": 120,
+    "nozzle": 0.8780487804878049,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.9833333333333333,
+    "n": 120,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.9473684210526315,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.8,
+    "n": 120,
+    "nozzle": 0.9512195121951219,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.8166666666666667,
+    "n": 120,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.975,
+    "n": 120,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS-u": {
+    "overall": 0.975,
+    "n": 120,
+    "nozzle": 0.975609756097561,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.9473684210526315,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 0.975,
+    "n": 120,
+    "nozzle": 0.975609756097561,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.9473684210526315,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.9666666666666667,
+    "n": 120,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 0.8421052631578947,
+    "reagent": 1.0
+   },
+   "Hybrid": {
+    "overall": 0.975,
+    "n": 120,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.96,
+    "membrane": 1.0,
+    "reagent": 0.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8247182122462595,
+   "LR-DS-sensor": 0.7887026319885644
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.05357142857142857,
+    "ub_sublot": 0.030555555555555555,
+    "ub_lot": 0.03649968641161477
+   },
+   "Hybrid": {
+    "test": 0.019736842105263157,
+    "ub_sublot": 0.030555555555555555,
+    "ub_lot": 0.03437564477303989
+   },
+   "T2": {
+    "test": 0.020676691729323307,
+    "ub_sublot": 0.029166666666666667,
+    "ub_lot": 0.03221319605157512
+   }
+  },
+  "hourly_qc_nc": 28,
+  "tuned": {
+   "LR_DS_C": 0.5,
+   "XGB_DS": [
+    5,
+    150
+   ],
+   "XGB_DSu": [
+    3,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9811320754716981,
+  "dq": {
+   "sample_completeness": 0.9776493055555556,
+   "sublot_feature_completeness": 0.9972777777777778,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.113,
+  "test_prev": 0.11333333333333333,
+  "n_nc_by_cause": {
+   "nozzle": 41,
+   "humidity": 33,
+   "drying": 25,
+   "membrane": 19,
+   "reagent": 2
+  }
+ },
+ {
+  "seed": 17,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.6566540141391984,
+    "roc_auc": 0.813049218375533,
+    "recall": 0.5963302752293578,
+    "precision": 0.6132075471698113,
+    "f1": 0.6046511627906976,
+    "far": 0.036931818181818184,
+    "far_ok": 0.03758020164986251,
+    "alarm_rate": 0.08833333333333333,
+    "brier": 0.04728877154204312,
+    "false_alarms": 39,
+    "ep_detect": 0.6428571428571429,
+    "ep_delay": -0.1111111111111111,
+    "lead_vs_release": 8.666666666666666,
+    "nc_sq": 81,
+    "nc_model": 42,
+    "n_episodes": 14,
+    "net_saving": 19.5,
+    "fa_top_lot_share": 0.1794871794871795
+   },
+   "T2": {
+    "pr_auc": 0.7894669624648096,
+    "roc_auc": 0.911006651586374,
+    "recall": 0.7247706422018348,
+    "precision": 0.7523809523809524,
+    "f1": 0.7383177570093459,
+    "far": 0.023674242424242424,
+    "far_ok": 0.02383134738771769,
+    "alarm_rate": 0.0875,
+    "brier": 0.03618227920315015,
+    "false_alarms": 25,
+    "ep_detect": 0.6428571428571429,
+    "ep_delay": 0.3333333333333333,
+    "lead_vs_release": 7.555555555555555,
+    "nc_sq": 81,
+    "nc_model": 46,
+    "n_episodes": 14,
+    "net_saving": 22.5,
+    "fa_top_lot_share": 0.16
+   },
+   "LR-snap": {
+    "pr_auc": 0.8523802656382373,
+    "roc_auc": 0.9190289188439189,
+    "recall": 0.8165137614678899,
+    "precision": 0.7672413793103449,
+    "f1": 0.7911111111111111,
+    "far": 0.020833333333333332,
+    "far_ok": 0.02474793767186068,
+    "alarm_rate": 0.09666666666666666,
+    "brier": 0.02529109154786173,
+    "false_alarms": 22,
+    "ep_detect": 0.9285714285714286,
+    "ep_delay": 0.0,
+    "lead_vs_release": 7.3076923076923075,
+    "nc_sq": 81,
+    "nc_model": 25,
+    "n_episodes": 14,
+    "net_saving": 45.0,
+    "fa_top_lot_share": 0.13636363636363635
+   },
+   "XGB-snap": {
+    "pr_auc": 0.8000774877113682,
+    "roc_auc": 0.9191886914622559,
+    "recall": 0.7431192660550459,
+    "precision": 0.7232142857142857,
+    "f1": 0.7330316742081446,
+    "far": 0.026515151515151516,
+    "far_ok": 0.02841429880843263,
+    "alarm_rate": 0.09333333333333334,
+    "brier": 0.03432745113968849,
+    "false_alarms": 28,
+    "ep_detect": 0.7857142857142857,
+    "ep_delay": -0.09090909090909091,
+    "lead_vs_release": 8.0,
+    "nc_sq": 81,
+    "nc_model": 33,
+    "n_episodes": 14,
+    "net_saving": 34.0,
+    "fa_top_lot_share": 0.21428571428571427
+   },
+   "LR-DS": {
+    "pr_auc": 0.8679068762481662,
+    "roc_auc": 0.9174059654050236,
+    "recall": 0.8256880733944955,
+    "precision": 0.8737864077669902,
+    "f1": 0.8490566037735849,
+    "far": 0.008522727272727272,
+    "far_ok": 0.011915673693858845,
+    "alarm_rate": 0.08583333333333333,
+    "brier": 0.0230475531402656,
+    "false_alarms": 9,
+    "ep_detect": 0.9285714285714286,
+    "ep_delay": -0.07692307692307693,
+    "lead_vs_release": 7.384615384615385,
+    "nc_sq": 81,
+    "nc_model": 24,
+    "n_episodes": 14,
+    "net_saving": 52.5,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8761512393637744,
+    "roc_auc": 0.9388659507732154,
+    "recall": 0.8348623853211009,
+    "precision": 0.7913043478260869,
+    "f1": 0.8125,
+    "far": 0.01893939393939394,
+    "far_ok": 0.021998166819431713,
+    "alarm_rate": 0.09583333333333334,
+    "brier": 0.024373861029744148,
+    "false_alarms": 20,
+    "ep_detect": 0.9285714285714286,
+    "ep_delay": -0.07692307692307693,
+    "lead_vs_release": 7.384615384615385,
+    "nc_sq": 81,
+    "nc_model": 24,
+    "n_episodes": 14,
+    "net_saving": 47.0,
+    "fa_top_lot_share": 0.45
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8736871925006026,
+    "roc_auc": 0.93724299733432,
+    "recall": 0.8348623853211009,
+    "precision": 0.7398373983739838,
+    "f1": 0.7844827586206896,
+    "far": 0.02556818181818182,
+    "far_ok": 0.02933088909257562,
+    "alarm_rate": 0.1025,
+    "brier": 0.02558872662484646,
+    "false_alarms": 27,
+    "ep_detect": 0.9285714285714286,
+    "ep_delay": -0.15384615384615385,
+    "lead_vs_release": 7.461538461538462,
+    "nc_sq": 81,
+    "nc_model": 23,
+    "n_episodes": 14,
+    "net_saving": 44.5,
+    "fa_top_lot_share": 0.37037037037037035
+   },
+   "Hybrid": {
+    "pr_auc": 0.8423553927243685,
+    "roc_auc": 0.9122638098201297,
+    "recall": 0.8348623853211009,
+    "precision": 0.8272727272727273,
+    "f1": 0.8310502283105023,
+    "far": 0.013257575757575758,
+    "far_ok": 0.017415215398716773,
+    "alarm_rate": 0.09166666666666666,
+    "brier": 0.023244275811235157,
+    "false_alarms": 14,
+    "ep_detect": 0.9285714285714286,
+    "ep_delay": -0.07692307692307693,
+    "lead_vs_release": 7.384615384615385,
+    "nc_sq": 81,
+    "nc_model": 24,
+    "n_episodes": 14,
+    "net_saving": 50.0,
+    "fa_top_lot_share": 0.35714285714285715
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.9024390243902439,
+    "n": 82,
+    "nozzle": 0.9122807017543859,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.975609756097561,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.875,
+    "membrane": 0.0,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.9146341463414634,
+    "n": 82,
+    "nozzle": 0.9473684210526315,
+    "humidity": 1.0,
+    "drying": 0.875,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.9512195121951219,
+    "n": 82,
+    "nozzle": 0.9824561403508771,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9878048780487805,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.875,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 1.0,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 1.0,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.975609756097561,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.875,
+    "membrane": 1.0,
+    "reagent": 0.5
+   },
+   "Hybrid": {
+    "overall": 0.9878048780487805,
+    "n": 82,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.875,
+    "membrane": 1.0,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.864053770584918,
+   "LR-DS-sensor": 0.8572072597358023
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.011915673693858845,
+    "ub_sublot": 0.032167832167832165,
+    "ub_lot": 0.04239464824703968
+   },
+   "Hybrid": {
+    "test": 0.017415215398716773,
+    "ub_sublot": 0.03076923076923077,
+    "ub_lot": 0.03588646394431489
+   },
+   "T2": {
+    "test": 0.02383134738771769,
+    "ub_sublot": 0.03076923076923077,
+    "ub_lot": 0.03309413213790652
+   }
+  },
+  "hourly_qc_nc": 25,
+  "tuned": {
+   "LR_DS_C": 0.5,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.978021978021978,
+  "dq": {
+   "sample_completeness": 0.9778298611111111,
+   "sublot_feature_completeness": 0.9975416666666668,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.10325,
+  "test_prev": 0.09083333333333334,
+  "n_nc_by_cause": {
+   "nozzle": 57,
+   "humidity": 14,
+   "drying": 8,
+   "membrane": 1,
+   "reagent": 2
+  }
+ },
+ {
+  "seed": 18,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.5268199315494989,
+    "roc_auc": 0.7205198047894676,
+    "recall": 0.22727272727272727,
+    "precision": 0.8333333333333334,
+    "f1": 0.35714285714285715,
+    "far": 0.0019175455417066154,
+    "far_ok": 0.0056179775280898875,
+    "alarm_rate": 0.03,
+    "brier": 0.07210707702505041,
+    "false_alarms": 2,
+    "ep_detect": 0.38461538461538464,
+    "ep_delay": -0.8,
+    "lead_vs_release": 9.8,
+    "nc_sq": 110,
+    "nc_model": 77,
+    "n_episodes": 13,
+    "net_saving": 32.0,
+    "fa_top_lot_share": 0.5
+   },
+   "T2": {
+    "pr_auc": 0.7343173205527309,
+    "roc_auc": 0.9232848144364999,
+    "recall": 0.4015151515151515,
+    "precision": 0.828125,
+    "f1": 0.5408163265306123,
+    "far": 0.00862895493767977,
+    "far_ok": 0.010299625468164793,
+    "alarm_rate": 0.05333333333333334,
+    "brier": 0.05579290727364416,
+    "false_alarms": 9,
+    "ep_detect": 0.5384615384615384,
+    "ep_delay": 0.42857142857142855,
+    "lead_vs_release": 7.571428571428571,
+    "nc_sq": 110,
+    "nc_model": 73,
+    "n_episodes": 13,
+    "net_saving": 32.5,
+    "fa_top_lot_share": 0.4444444444444444
+   },
+   "LR-snap": {
+    "pr_auc": 0.7452268159443056,
+    "roc_auc": 0.8518471229145388,
+    "recall": 0.6439393939393939,
+    "precision": 0.9042553191489362,
+    "f1": 0.7522123893805309,
+    "far": 0.007670182166826462,
+    "far_ok": 0.008426966292134831,
+    "alarm_rate": 0.07833333333333334,
+    "brier": 0.042714387084149645,
+    "false_alarms": 8,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": 0.09090909090909091,
+    "lead_vs_release": 8.181818181818182,
+    "nc_sq": 110,
+    "nc_model": 44,
+    "n_episodes": 13,
+    "net_saving": 62.0,
+    "fa_top_lot_share": 0.375
+   },
+   "XGB-snap": {
+    "pr_auc": 0.677429146427706,
+    "roc_auc": 0.8353975144705481,
+    "recall": 0.5606060606060606,
+    "precision": 0.8222222222222222,
+    "f1": 0.6666666666666666,
+    "far": 0.014381591562799617,
+    "far_ok": 0.0149812734082397,
+    "alarm_rate": 0.075,
+    "brier": 0.05579506605863571,
+    "false_alarms": 15,
+    "ep_detect": 0.8461538461538461,
+    "ep_delay": 0.36363636363636365,
+    "lead_vs_release": 7.909090909090909,
+    "nc_sq": 110,
+    "nc_model": 47,
+    "n_episodes": 13,
+    "net_saving": 55.5,
+    "fa_top_lot_share": 0.26666666666666666
+   },
+   "LR-DS": {
+    "pr_auc": 0.9082303450764866,
+    "roc_auc": 0.9583049597094542,
+    "recall": 0.7954545454545454,
+    "precision": 0.9459459459459459,
+    "f1": 0.8641975308641975,
+    "far": 0.0028763183125599234,
+    "far_ok": 0.0056179775280898875,
+    "alarm_rate": 0.0925,
+    "brier": 0.02854262911594047,
+    "false_alarms": 3,
+    "ep_detect": 1.0,
+    "ep_delay": 0.0,
+    "lead_vs_release": 8.307692307692308,
+    "nc_sq": 110,
+    "nc_model": 26,
+    "n_episodes": 13,
+    "net_saving": 82.5,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.9027852075328554,
+    "roc_auc": 0.9544248666439679,
+    "recall": 0.7272727272727273,
+    "precision": 0.9795918367346939,
+    "f1": 0.8347826086956521,
+    "far": 0.0009587727708533077,
+    "far_ok": 0.0018726591760299626,
+    "alarm_rate": 0.08166666666666667,
+    "brier": 0.02566109038889408,
+    "false_alarms": 1,
+    "ep_detect": 0.9230769230769231,
+    "ep_delay": 0.25,
+    "lead_vs_release": 8.25,
+    "nc_sq": 110,
+    "nc_model": 35,
+    "n_episodes": 13,
+    "net_saving": 74.5,
+    "fa_top_lot_share": 1.0
+   },
+   "XGB-DS": {
+    "pr_auc": 0.914744739278576,
+    "roc_auc": 0.9590426739303144,
+    "recall": 0.8257575757575758,
+    "precision": 0.9396551724137931,
+    "f1": 0.8790322580645162,
+    "far": 0.005752636625119847,
+    "far_ok": 0.006554307116104869,
+    "alarm_rate": 0.09666666666666666,
+    "brier": 0.02258721925318241,
+    "false_alarms": 6,
+    "ep_detect": 1.0,
+    "ep_delay": 0.07692307692307693,
+    "lead_vs_release": 8.23076923076923,
+    "nc_sq": 110,
+    "nc_model": 27,
+    "n_episodes": 13,
+    "net_saving": 80.0,
+    "fa_top_lot_share": 0.3333333333333333
+   },
+   "Hybrid": {
+    "pr_auc": 0.8954409830820175,
+    "roc_auc": 0.950785949381455,
+    "recall": 0.7196969696969697,
+    "precision": 0.9405940594059405,
+    "f1": 0.815450643776824,
+    "far": 0.004793863854266539,
+    "far_ok": 0.0056179775280898875,
+    "alarm_rate": 0.08416666666666667,
+    "brier": 0.029979525538329537,
+    "false_alarms": 5,
+    "ep_detect": 0.9230769230769231,
+    "ep_delay": 0.4166666666666667,
+    "lead_vs_release": 8.083333333333334,
+    "nc_sq": 110,
+    "nc_model": 37,
+    "n_episodes": 13,
+    "net_saving": 70.5,
+    "fa_top_lot_share": 0.4
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.5229357798165137,
+    "n": 109,
+    "nozzle": 0.6666666666666666,
+    "humidity": 0.75,
+    "drying": 0.9411764705882353,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 0.963302752293578,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 0.5,
+    "drying": 0.9411764705882353,
+    "membrane": 0.9375,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.6697247706422018,
+    "n": 109,
+    "nozzle": 0.9298245614035088,
+    "humidity": 1.0,
+    "drying": 0.9411764705882353,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.6880733944954128,
+    "n": 109,
+    "nozzle": 0.9824561403508771,
+    "humidity": 1.0,
+    "drying": 0.8823529411764706,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.981651376146789,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 0.75,
+    "drying": 0.9411764705882353,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS-u": {
+    "overall": 0.981651376146789,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 0.75,
+    "drying": 0.9411764705882353,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "XGB-DS": {
+    "overall": 0.9908256880733946,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.9411764705882353,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "Naive-z": {
+    "overall": 0.926605504587156,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 0.9411764705882353,
+    "membrane": 0.6875,
+    "reagent": 0.8666666666666667
+   },
+   "Hybrid": {
+    "overall": 0.9724770642201835,
+    "n": 109,
+    "nozzle": 1.0,
+    "humidity": 0.5,
+    "drying": 0.9411764705882353,
+    "membrane": 1.0,
+    "reagent": 1.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.9011168900103999,
+   "LR-DS-sensor": 0.7430181072392478
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.0056179775280898875,
+    "ub_sublot": 0.02901591895803177,
+    "ub_lot": 0.03252918632728561
+   },
+   "Hybrid": {
+    "test": 0.0056179775280898875,
+    "ub_sublot": 0.030390738060781478,
+    "ub_lot": 0.031049876331364912
+   },
+   "T2": {
+    "test": 0.010299625468164793,
+    "ub_sublot": 0.030390738060781478,
+    "ub_lot": 0.03221106273500891
+   }
+  },
+  "hourly_qc_nc": 26,
+  "tuned": {
+   "LR_DS_C": 0.05,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9578947368421052,
+  "dq": {
+   "sample_completeness": 0.9783402777777778,
+   "sublot_feature_completeness": 0.9976805555555556,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.09925,
+  "test_prev": 0.11,
+  "n_nc_by_cause": {
+   "nozzle": 57,
+   "humidity": 4,
+   "drying": 17,
+   "membrane": 16,
+   "reagent": 15
+  }
+ },
+ {
+  "seed": 19,
+  "res": {
+   "SPC": {
+    "pr_auc": 0.3377026733281885,
+    "roc_auc": 0.6726553941414622,
+    "recall": 0.23157894736842105,
+    "precision": 0.6666666666666666,
+    "f1": 0.34375,
+    "far": 0.007582938388625593,
+    "far_ok": 0.009954751131221719,
+    "alarm_rate": 0.0275,
+    "brier": 0.061544102469629026,
+    "false_alarms": 8,
+    "ep_detect": 0.3333333333333333,
+    "ep_delay": -0.3333333333333333,
+    "lead_vs_release": 9.666666666666666,
+    "nc_sq": 77,
+    "nc_model": 55,
+    "n_episodes": 9,
+    "net_saving": 18.0,
+    "fa_top_lot_share": 0.25
+   },
+   "T2": {
+    "pr_auc": 0.7633573809701524,
+    "roc_auc": 0.9478256727792331,
+    "recall": 0.5157894736842106,
+    "precision": 0.8596491228070176,
+    "f1": 0.6447368421052632,
+    "far": 0.006635071090047393,
+    "far_ok": 0.007239819004524887,
+    "alarm_rate": 0.0475,
+    "brier": 0.03576130964421347,
+    "false_alarms": 7,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": 1.0,
+    "lead_vs_release": 7.833333333333333,
+    "nc_sq": 77,
+    "nc_model": 42,
+    "n_episodes": 9,
+    "net_saving": 31.5,
+    "fa_top_lot_share": 0.2857142857142857
+   },
+   "LR-snap": {
+    "pr_auc": 0.664296016953039,
+    "roc_auc": 0.8174708263872351,
+    "recall": 0.5789473684210527,
+    "precision": 0.7746478873239436,
+    "f1": 0.6626506024096386,
+    "far": 0.012322274881516588,
+    "far_ok": 0.014479638009049774,
+    "alarm_rate": 0.059166666666666666,
+    "brier": 0.04041517576305271,
+    "false_alarms": 13,
+    "ep_detect": 0.6666666666666666,
+    "ep_delay": -0.16666666666666666,
+    "lead_vs_release": 9.0,
+    "nc_sq": 77,
+    "nc_model": 35,
+    "n_episodes": 9,
+    "net_saving": 35.5,
+    "fa_top_lot_share": 0.38461538461538464
+   },
+   "XGB-snap": {
+    "pr_auc": 0.5545775931030331,
+    "roc_auc": 0.7974184329602286,
+    "recall": 0.43157894736842106,
+    "precision": 0.7884615384615384,
+    "f1": 0.5578231292517007,
+    "far": 0.006635071090047393,
+    "far_ok": 0.009954751131221719,
+    "alarm_rate": 0.043333333333333335,
+    "brier": 0.04835090786218643,
+    "false_alarms": 7,
+    "ep_detect": 0.5555555555555556,
+    "ep_delay": 0.0,
+    "lead_vs_release": 8.6,
+    "nc_sq": 77,
+    "nc_model": 43,
+    "n_episodes": 9,
+    "net_saving": 30.5,
+    "fa_top_lot_share": 0.42857142857142855
+   },
+   "LR-DS": {
+    "pr_auc": 0.8196802540870779,
+    "roc_auc": 0.9448725887115981,
+    "recall": 0.7684210526315789,
+    "precision": 0.5983606557377049,
+    "f1": 0.6728110599078341,
+    "far": 0.03696682464454976,
+    "far_ok": 0.044343891402714934,
+    "alarm_rate": 0.10166666666666667,
+    "brier": 0.030972928391870512,
+    "false_alarms": 39,
+    "ep_detect": 0.8888888888888888,
+    "ep_delay": -0.625,
+    "lead_vs_release": 9.875,
+    "nc_sq": 77,
+    "nc_model": 13,
+    "n_episodes": 9,
+    "net_saving": 44.5,
+    "fa_top_lot_share": 0.46153846153846156
+   },
+   "XGB-DS-u": {
+    "pr_auc": 0.8421579723727927,
+    "roc_auc": 0.9416527744701119,
+    "recall": 0.8315789473684211,
+    "precision": 0.626984126984127,
+    "f1": 0.7149321266968326,
+    "far": 0.034123222748815164,
+    "far_ok": 0.04253393665158371,
+    "alarm_rate": 0.105,
+    "brier": 0.023280169814825058,
+    "false_alarms": 36,
+    "ep_detect": 1.0,
+    "ep_delay": -0.2222222222222222,
+    "lead_vs_release": 9.666666666666666,
+    "nc_sq": 77,
+    "nc_model": 14,
+    "n_episodes": 9,
+    "net_saving": 45.0,
+    "fa_top_lot_share": 0.3055555555555556
+   },
+   "XGB-DS": {
+    "pr_auc": 0.8367311384923322,
+    "roc_auc": 0.9431769468921172,
+    "recall": 0.8421052631578947,
+    "precision": 0.6349206349206349,
+    "f1": 0.7239819004524887,
+    "far": 0.034123222748815164,
+    "far_ok": 0.0416289592760181,
+    "alarm_rate": 0.105,
+    "brier": 0.02603246085345745,
+    "false_alarms": 36,
+    "ep_detect": 0.8888888888888888,
+    "ep_delay": -0.375,
+    "lead_vs_release": 9.625,
+    "nc_sq": 77,
+    "nc_model": 15,
+    "n_episodes": 9,
+    "net_saving": 44.0,
+    "fa_top_lot_share": 0.3611111111111111
+   },
+   "Hybrid": {
+    "pr_auc": 0.8154777731357068,
+    "roc_auc": 0.9481686115741843,
+    "recall": 0.7368421052631579,
+    "precision": 0.7865168539325843,
+    "f1": 0.7608695652173914,
+    "far": 0.011374407582938388,
+    "far_ok": 0.017194570135746608,
+    "alarm_rate": 0.07416666666666667,
+    "brier": 0.02923430477467238,
+    "false_alarms": 12,
+    "ep_detect": 0.8888888888888888,
+    "ep_delay": -0.125,
+    "lead_vs_release": 9.375,
+    "nc_sq": 77,
+    "nc_model": 17,
+    "n_episodes": 9,
+    "net_saving": 54.0,
+    "fa_top_lot_share": 0.5833333333333334
+   }
+  },
+  "att": {
+   "SPC": {
+    "overall": 0.5060240963855421,
+    "n": 83,
+    "nozzle": 0.6842105263157895,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "T2": {
+    "overall": 1.0,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 1.0
+   },
+   "LR-snap": {
+    "overall": 0.5903614457831325,
+    "n": 83,
+    "nozzle": 0.868421052631579,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "XGB-snap": {
+    "overall": 0.6385542168674698,
+    "n": 83,
+    "nozzle": 0.9736842105263158,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.0,
+    "reagent": 0.0
+   },
+   "LR-DS": {
+    "overall": 0.9759036144578314,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS-u": {
+    "overall": 0.9759036144578314,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "XGB-DS": {
+    "overall": 0.9759036144578314,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   },
+   "Naive-z": {
+    "overall": 0.9397590361445783,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 0.8888888888888888,
+    "reagent": 0.0
+   },
+   "Hybrid": {
+    "overall": 0.9759036144578314,
+    "n": 83,
+    "nozzle": 1.0,
+    "humidity": 1.0,
+    "drying": 1.0,
+    "membrane": 1.0,
+    "reagent": 0.0
+   }
+  },
+  "abl": {
+   "LR-snap+lot": 0.8068549923170951,
+   "LR-DS-sensor": 0.6682544571904733
+  },
+  "farchk": {
+   "LR-DS": {
+    "test": 0.044343891402714934,
+    "ub_sublot": 0.029239766081871343,
+    "ub_lot": 0.034409958730449226
+   },
+   "Hybrid": {
+    "test": 0.017194570135746608,
+    "ub_sublot": 0.029239766081871343,
+    "ub_lot": 0.032222731881608804
+   },
+   "T2": {
+    "test": 0.007239819004524887,
+    "ub_sublot": 0.029239766081871343,
+    "ub_lot": 0.03125271739130434
+   }
+  },
+  "hourly_qc_nc": 17,
+  "tuned": {
+   "LR_DS_C": 0.5,
+   "XGB_DS": [
+    2,
+    300
+   ],
+   "XGB_DSu": [
+    2,
+    300
+   ]
+  },
+  "hybrid_lr_share": 0.9714285714285714,
+  "dq": {
+   "sample_completeness": 0.9775347222222223,
+   "sublot_feature_completeness": 0.9973194444444444,
+   "batch_linkage": 1.0,
+   "lot_linkage": 1.0
+  },
+  "prevalence": 0.101,
+  "test_prev": 0.07916666666666666,
+  "n_nc_by_cause": {
+   "nozzle": 38,
+   "humidity": 9,
+   "drying": 7,
+   "membrane": 27,
+   "reagent": 2
+  }
+ }
+]
