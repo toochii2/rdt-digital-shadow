@@ -9,7 +9,7 @@ import experiments as E, sim
 
 plt.rcParams.update({
     "font.family": "Liberation Serif", "font.size": 7.5, "axes.titlesize": 7.5, "axes.labelsize": 7.5,
-    "xtick.labelsize": 7, "ytick.labelsize": 7, "legend.fontsize": 7, "axes.linewidth": 0.6,
+    "xtick.labelsize": 7.2, "ytick.labelsize": 7.2, "legend.fontsize": 7.2, "axes.linewidth": 0.6,
     "xtick.major.width": 0.6, "ytick.major.width": 0.6, "axes.spines.top": False, "axes.spines.right": False,
     "savefig.dpi": 800, "figure.dpi": 150, "pdf.fonttype": 42, "hatch.linewidth": 0.5,
 })
@@ -33,12 +33,12 @@ def save(fig, name):
 
 # ---------------- Fig. 1 architecture with evidence-card mock-up ----------------
 def fig_architecture():
-    fig = plt.figure(figsize=(W, 2.9))
+    fig = plt.figure(figsize=(W, 3.45))
     ax = fig.add_axes([0, 0, 0.6, 1]); ax.set_xlim(-8, 100); ax.set_ylim(0, 100); ax.axis("off")
     def box(x, y, w, h, title, body, fc="#ffffff", ec=INK, lw=0.7):
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.2,rounding_size=1.2", fc=fc, ec=ec, lw=lw))
-        ax.text(x + 1.4, y + h - 1.4, title, ha="left", va="top", fontsize=7, weight="bold")
-        ax.text(x + 1.4, y + h - 6.4, body, ha="left", va="top", fontsize=6.5, color="#1a1a1a", linespacing=1.1)
+        ax.text(x + 1.4, y + h - 1.4, title, ha="left", va="top", fontsize=7.5, weight="bold")
+        ax.text(x + 1.4, y + h - 5.6, body, ha="left", va="top", fontsize=6.8, color="#1a1a1a", linespacing=1.1)
     layers = [
         ("L1  Operation and records", "Line sensors, lot genealogy, maintenance,\nincoming inspection, in-process QC"),
         ("L2  Integration", "5-min signals to 1-h sub-lots; lot linkage;\ncompleteness and provenance stamps"),
@@ -47,46 +47,46 @@ def fig_architecture():
         ("L5  Evidence card", "Risk, cause groups, z cross-check, novelty\nflag, reliability, sources, versions"),
         ("L6  Human QA disposition", "Operator check, QA decision, reasons for\noverrides; no autonomous release"),
     ]
-    h, gap = 12.6, 2.2; y = 100 - h; ys = []
+    h, gap = 12.0, 5.0; y = 100 - h; ys = []
     for t, b_ in layers:
         hl = t.startswith(("L3", "L4"))
         box(0, y, 99, h, t, b_, fc="#f2f7fd" if hl else "#ffffff", ec=BLUE if hl else INK, lw=1.0 if hl else 0.7)
         ys.append(y); y -= h + gap
     for yy in ys[:-1]:
-        ax.add_patch(FancyArrowPatch((50, yy + 0.1), (50, yy - gap - 0.1), arrowstyle="-|>", mutation_scale=5, lw=0.7, color=INK))
+        ax.add_patch(FancyArrowPatch((50, yy + 0.1), (50, yy - gap - 0.1), arrowstyle="-|>", mutation_scale=8, lw=0.9, color=INK, shrinkA=0, shrinkB=0))
     yt = ys[0] + h / 2; yb = ys[-1] + h / 2
     ax.plot([-0.6, -4.2, -4.2], [yb, yb, yt], color=GREY, lw=0.8, ls=(0, (3, 2)))
     ax.add_patch(FancyArrowPatch((-4.2, yt), (-0.7, yt), arrowstyle="-|>", mutation_scale=5, lw=0.8, color=GREY))
-    ax.text(-6.4, (yt + yb) / 2, "human-closed feedback", rotation=90, ha="center", va="center", fontsize=6.5, color=GREY)
-    GH = 12.6; gy = ys[-1] - gap - GH
+    ax.text(-6.4, (yt + yb) / 2, "human-closed feedback", rotation=90, ha="center", va="center", fontsize=6.8, color=GREY)
+    GH = 12.8; gy = ys[-1] - gap - GH
     ax.add_patch(FancyBboxPatch((0, gy), 99, GH, boxstyle="round,pad=0.2,rounding_size=1.2", fc="#f2f1ee", ec=GREY, lw=0.7))
-    ax.text(1.4, gy + GH - 1.4, "Governance (all layers)", ha="left", va="top", fontsize=7, weight="bold")
-    ax.text(1.4, gy + GH - 6.4, "Access control, audit trail, versioning, change control,\nlot-blocked threshold validation, clustering monitor",
-            ha="left", va="top", fontsize=6.5, linespacing=1.1)
+    ax.text(1.4, gy + GH - 1.4, "Governance (all layers)", ha="left", va="top", fontsize=7.5, weight="bold")
+    ax.text(1.4, gy + GH - 5.6, "Access control, audit trail, versioning, change control,\nlot-blocked threshold validation, clustering monitor",
+            ha="left", va="top", fontsize=6.8, linespacing=1.1)
     ax.set_ylim(gy - 1, 100.5)
     # evidence card mock-up
     cx = fig.add_axes([0.62, 0.0, 0.38, 1]); cx.set_xlim(0, 100); cx.set_ylim(0, 100); cx.axis("off")
     cx.add_patch(FancyBboxPatch((1, 1), 98, 97, boxstyle="round,pad=0.4,rounding_size=2", fc="#ffffff", ec=BLUE, lw=1.0))
     cx.add_patch(Rectangle((1, 89), 98, 9, fc="#f2f7fd", ec="none"))
-    cx.text(4, 96.5, "Evidence card (illustrative)", fontsize=7, weight="bold", va="top")
-    cx.text(4, 92.0, "Line A, sub-lot 14:00–15:00, batch 2", fontsize=6.5, va="top", color=GREY)
-    cx.text(4, 85.5, "Priority  HIGH   (episode open 2 h)", fontsize=6.8, va="top", weight="bold", color=INK)
-    cx.text(4, 80.0, "More unusual than 99% of validated\nnormal hours (logistic component)", fontsize=6.5, va="top", linespacing=1.1)
+    cx.text(4, 96.5, "Evidence card (illustrative)", fontsize=7.5, weight="bold", va="top")
+    cx.text(4, 92.0, "Line A, sub-lot 14:00–15:00, batch 2", fontsize=6.8, va="top", color=GREY)
+    cx.text(4, 85.5, "Priority  HIGH   (episode open 2 h)", fontsize=7, va="top", weight="bold", color=INK)
+    cx.text(4, 80.0, "More unusual than 99% of validated\nnormal hours (logistic component)", fontsize=6.8, va="top", linespacing=1.1)
     cx.text(4, 69.5, "Cause groups", fontsize=6.8, va="top", weight="bold")
     for i, (lab, v) in enumerate([("Nozzle", 0.86), ("Humidity", 0.08), ("Oven", 0.04), ("Lots", 0.02)]):
         yy = 64.5 - i * 4.6
-        cx.text(4, yy, lab, fontsize=6.5, va="center")
+        cx.text(4, yy, lab, fontsize=6.8, va="center")
         cx.add_patch(Rectangle((33, yy - 1.4), 50 * v, 2.8, fc=AQUA if i == 0 else LGREY, ec="none"))
-        cx.text(35 + 50 * v, yy, f"{v:.2f}", fontsize=6.5, va="center")
-    cx.text(4, 44.5, "z cross-check: agrees (Nozzle)", fontsize=6.5, va="top")
-    cx.text(4, 39.8, "Novelty gate: within known patterns", fontsize=6.5, va="top")
-    cx.text(4, 35.1, "Past reliability, Nozzle: 100% (sim.)", fontsize=6.5, va="top")
-    cx.text(4, 30.4, "Sources: back-pressure trend; last\ncleaning 26 h ago; lots M-07, R-02", fontsize=6.5, va="top", linespacing=1.1)
-    cx.text(4, 20.3, "Data 12/12 samples; model v2.0", fontsize=6.5, va="top", color=GREY)
+        cx.text(35 + 50 * v, yy, f"{v:.2f}", fontsize=6.8, va="center")
+    cx.text(4, 44.5, "z cross-check: agrees (Nozzle)", fontsize=6.8, va="top")
+    cx.text(4, 39.8, "Novelty gate: within known patterns", fontsize=6.8, va="top")
+    cx.text(4, 35.1, "Past reliability, Nozzle: 100% (sim.)", fontsize=6.8, va="top")
+    cx.text(4, 30.4, "Sources: back-pressure trend; last\ncleaning 26 h ago; lots M-07, R-02", fontsize=6.8, va="top", linespacing=1.1)
+    cx.text(4, 20.3, "Data 12/12 samples; model v2.0", fontsize=6.8, va="top", color=GREY)
     for j, b in enumerate(["Investigate", "Contain", "Override"]):
         cx.add_patch(FancyBboxPatch((4 + j * 31.5, 5.5), 28, 7.5, boxstyle="round,pad=0.3,rounding_size=1.5", fc="#ffffff", ec=INK, lw=0.6))
-        cx.text(18 + j * 31.5, 9.3, b, fontsize=6.5, ha="center", va="center")
-    cx.text(50, 2.6, "override requires a recorded reason", fontsize=6, ha="center", va="center", color=GREY)
+        cx.text(18 + j * 31.5, 9.3, b, fontsize=6.8, ha="center", va="center")
+    cx.text(50, 2.6, "override requires a recorded reason", fontsize=6.5, ha="center", va="center", color=GREY)
     save(fig, "fig1_architecture")
 
 
@@ -109,7 +109,7 @@ def fig_results():
         c = COL[m] if m in ("LR-DS", "Hybrid", "T2") else (INK if ds_ else MGREY)
         mk = "D" if m == "Hybrid" else ("o" if ds_ else "s")
         ax.errorbar(mu, y, xerr=h, fmt=mk, color=c, ms=3.6, mfc=c if ds_ else "white", lw=0.8, capsize=1.8)
-        ax.text(mu + h + 0.01, y, f"{mu:.2f}", va="center", fontsize=6.5)
+        ax.text(mu + h + 0.01, y, f"{mu:.2f}", va="center", fontsize=7)
     ax.set_yticks(yy); ax.set_yticklabels([NAME[m] for m in order])
     ax.axhspan(5.5, 8.5, color="#f2f1ee", zorder=0, lw=0)
     ax.set_xlim(0.45, 0.97); ax.set_xticks([0.5, 0.6, 0.7, 0.8, 0.9]); ax.set_xlabel("PR-AUC (mean, 95% CI)")
@@ -120,7 +120,7 @@ def fig_results():
     ax.imshow(np.where(M.values < 0.05, np.nan, M.values), cmap="Blues", vmin=0.4, vmax=1.0, aspect="auto")
     for i in range(M.shape[0]):
         for j in range(M.shape[1]):
-            v = M.values[i, j]; ax.text(j, i, f"{100*v:.0f}", ha="center", va="center", fontsize=6.5, color="white" if v > 0.82 else INK)
+            v = M.values[i, j]; ax.text(j, i, f"{100*v:.0f}", ha="center", va="center", fontsize=7, color="white" if v > 0.82 else INK)
     ax.set_xticks(range(5)); ax.set_xticklabels([CAUSE[c] for c in sim.FAULT_TYPES], rotation=35, ha="right")
     ax.set_yticks(range(len(morder))); ax.set_yticklabels([NAME[m] for m in morder])
     ax.spines[:].set_visible(False); ax.tick_params(length=0)
@@ -155,9 +155,9 @@ def fig_story(seed=10):
     G = pd.DataFrame({g: A[[c for c in cols if c in A.columns]].clip(lower=0).sum(1) for g, cols in sim.FEATURE_GROUPS.items()})
     fig, axs = plt.subplots(3, 1, figsize=(W, 2.5), sharex=True, gridspec_kw=dict(height_ratios=[1, 1, 1.15], hspace=0.2))
     ax = axs[0]; ax.plot(x, ds.bp_norm.values[idx], color=INK, lw=1.0, marker="o", ms=2.2)
-    ax.set_ylabel("Back-pressure at\n50 mm/s (kPa)")
+    ax.set_ylabel("Back-pressure\n(kPa)")
     ax2 = axs[1]; ax2.plot(x, sc[idx], color=BLUE, lw=1.0, marker="s", ms=2.2)
-    ax2.axhline(thr, color=GREY, lw=0.7, ls="--"); ax2.text(x[0] + 0.2, thr + 0.015, "alarm threshold (2% false-alarm rate)", fontsize=6.5, color=GREY, va="bottom")
+    ax2.axhline(thr, color=GREY, lw=0.7, ls="--"); ax2.text(x[0] + 0.2, thr + 0.015, "alarm threshold (2% false-alarm rate)", fontsize=7, color=GREY, va="bottom")
     ax2.set_ylabel("Hybrid score\n(percentile)"); ax2.set_ylim(min(0.9, np.nanmin(sc[idx]) - 0.03), 1.15)
     ax3 = axs[2]; bottom = np.zeros(len(idx))
     sty = {"nozzle": (INK, ""), "humidity": ("#ffffff", "////"), "drying": (LGREY, ""), "membrane": ("#ffffff", "...."), "reagent": (MGREY, "")}
@@ -165,21 +165,21 @@ def fig_story(seed=10):
         v = G[g].values; fc, hh = sty[g]
         ax3.bar(x, v, bottom=bottom, width=0.72, color=fc, edgecolor=INK if fc == "#ffffff" else "white", lw=0.4, hatch=hh, label=CAUSE[g])
         bottom += v
-    ax3.set_ylabel("Positive contribution\n(LR component)"); ax3.set_ylim(0, bottom.max() * 1.45)
-    ax3.legend(ncol=5, loc="upper left", frameon=False, handlelength=1.1, columnspacing=0.8, fontsize=6.5, bbox_to_anchor=(0, 1.08))
+    ax3.set_ylabel("LR cause\ncontribution"); ax3.set_ylim(0, bottom.max() * 1.45)
+    ax3.legend(ncol=5, loc="upper left", frameon=True, facecolor="white", edgecolor="none", framealpha=1, handlelength=1.1, columnspacing=0.8, fontsize=7, bbox_to_anchor=(0, 1.08))
     ncx = x[sub.nc.values[idx] == 1]
     for a in axs:
         a.axvspan(e["start"] - onset - 0.5, e["start"] + e["dur"] - onset - 0.5, color="#eef3fb", zorder=0)
         a.axvline(0, color=INK, lw=0.7, ls=":"); a.axvline(t_al - onset, color=BLUE, lw=0.9); a.axvline(tsq - onset, color=INK, lw=0.9, ls="-.")
     y0 = axs[0].get_ylim()[1]
     axs[0].plot(ncx, np.full(len(ncx), y0), "v", color=INK, ms=3.2, clip_on=False, zorder=5, label="QC nonconforming sub-lot")
-    axs[0].legend(loc="upper left", frameon=False, fontsize=6.5, handlelength=1.0, borderaxespad=0.1)
+    axs[0].legend(loc="upper left", frameon=False, fontsize=7, handlelength=1.0, borderaxespad=0.1)
     for xv, lab, c, ha, dx in [(0, "first NC", INK, "left", 0.25), (t_al - onset, "first alarm", BLUE, "right", -0.25),
                                (tsq - onset, "QC result", INK, "right", -0.25)]:
-        axs[1].text(xv + dx, 0.06, lab, transform=axs[1].get_xaxis_transform(), rotation=90, fontsize=6.5, color=c, ha=ha, va="bottom")
-    ax3.set_xlabel("Hours relative to the first nonconforming sub-lot")
+        axs[1].text(xv + dx, 0.06, lab, transform=axs[1].get_xaxis_transform(), rotation=90, fontsize=7, color=c, ha=ha, va="bottom")
+    ax3.set_xlabel("Hours relative to the first nonconforming sub-lot"); fig.align_ylabels(axs)
     for a, lab in zip(axs, "abc"):
-        a.text(-0.205, 1.02, f"({lab})", transform=a.transAxes, fontsize=8, weight="bold", va="top")
+        a.text(-0.235, 1.0, f"({lab})", transform=a.transAxes, fontsize=8, weight="bold", va="top")
     save(fig, "fig3_episode")
     return dict(seed=seed, onset=int(onset), alarm=int(t_al), tsq=int(tsq), lead_vs_qc=int(tsq - t_al), alarm_rel_onset=int(t_al - onset))
 
@@ -201,7 +201,7 @@ def fig_types():
         ax.imshow(Mv, cmap="Blues", vmin=0, vmax=1, aspect="auto")
         for i in range(Mv.shape[0]):
             for j in range(Mv.shape[1]):
-                v = Mv[i, j]; ax.text(j, i, f"{100*v:.0f}", ha="center", va="center", fontsize=6.5, color="white" if v > 0.6 else INK,
+                v = Mv[i, j]; ax.text(j, i, f"{100*v:.0f}", ha="center", va="center", fontsize=7, color="white" if v > 0.6 else INK,
                                       weight="bold" if j == Mv.shape[1] - 1 else None)
         ax.axvline(4.5, color="white", lw=1.5)
         ax.set_xticks(range(6)); ax.set_xticklabels(labs, rotation=35, ha="right")
