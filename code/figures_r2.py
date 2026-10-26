@@ -156,7 +156,19 @@ def fig_story(seed=10):
     A = ctx["models"]["LR-DS"][0].attrib(ds.iloc[idx]).reset_index(drop=True)
     G = pd.DataFrame({g: A[[c for c in cols if c in A.columns]].clip(lower=0).sum(1) for g, cols in sim.FEATURE_GROUPS.items()})
     fig, axs = plt.subplots(3, 1, figsize=(W, 2.8), sharex=True, gridspec_kw=dict(height_ratios=[1, 1, 1.1], hspace=0.42))
-    ax = axs[0]; ax.plot(x, ds.bp_norm.values[idx], color=INK, lw=1.0, marker="o", ms=2.6)
+    bp = ds.bp_norm.values[idx]
+    ax = axs[0]; ax.plot(x, bp, color=INK, lw=1.0, marker="o", ms=2.6)
+    # bridge each sensor-dropout run with a thin dashed segment between the readings either side; no value is drawn
+    # at the missing hour, so nothing is imputed
+    miss = ~np.isfinite(bp); j = 0
+    while j < len(bp):
+        if miss[j]:
+            k = j
+            while k < len(bp) and miss[k]: k += 1
+            if j > 0 and k < len(bp):
+                ax.plot([x[j - 1], x[k]], [bp[j - 1], bp[k]], color=GREY, lw=0.8, ls=(0, (2, 1.5)), zorder=1)
+            j = k
+        else: j += 1
     ax.set_ylabel("Back-pressure\n(kPa)")
     ax2 = axs[1]; ax2.plot(x, sc[idx], color=BLUE, lw=1.0, marker="s", ms=2.6)
     ax2.axhline(thr, color=GREY, lw=0.8, ls="--")
@@ -178,13 +190,14 @@ def fig_story(seed=10):
     for a, lab in zip(axs, "abc"):
         a.text(-0.2, 1.0, f"({lab})", transform=a.transAxes, fontsize=9, weight="bold", va="top")
     # all legends sit below the figure: event markers first, then the cause groups of panel (c)
-    ev = [Line2D([], [], marker="v", ls="", color=INK, ms=4, label="QC nonconforming sub-lot"),
+    ev = [Line2D([], [], marker="v", ls="", color=INK, ms=4, label="QC nonconforming"),
           Line2D([], [], color=BLUE, lw=1.0, label="first alarm"), Line2D([], [], color=INK, lw=0.8, ls=":", label="first NC"),
           Line2D([], [], color=INK, lw=0.9, ls="-.", label="QC result"), Line2D([], [], color=GREY, lw=0.8, ls="--", label="2% FAR threshold"),
-          Patch(fc="#eef3fb", ec="none", label="injected episode")]
+          Patch(fc="#eef3fb", ec="none", label="injected episode"),
+          Line2D([], [], color=GREY, lw=0.8, ls=(0, (2, 1.5)), label="dropout (no reading)")]
     cg = [Patch(fc=sty[g][0], ec=INK if sty[g][0] == "#ffffff" else "none", hatch=sty[g][1], lw=0.4, label=CAUSE[g]) for g in sim.FEATURE_GROUPS]
-    l1 = fig.legend(handles=ev, loc="upper center", bbox_to_anchor=(0.53, -0.03), ncol=3, frameon=False, handlelength=1.6,
-                    columnspacing=1.2, fontsize=FS, borderaxespad=0.2, labelspacing=0.3)
+    l1 = fig.legend(handles=ev, loc="upper center", bbox_to_anchor=(0.53, -0.03), ncol=4, frameon=False, handlelength=1.2, handletextpad=0.4,
+                    columnspacing=0.7, fontsize=FS, borderaxespad=0.2, labelspacing=0.3)
     fig.legend(handles=cg, loc="upper center", bbox_to_anchor=(0.53, -0.13), ncol=5, frameon=False, handlelength=1.3,
                handletextpad=0.5, columnspacing=1.0, fontsize=FS)
     fig.add_artist(l1)
