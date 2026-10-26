@@ -1,5 +1,7 @@
 # Explainable digital shadow for lateral-flow RDT manufacturing quality
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23655228.svg)](https://doi.org/10.5281/zenodo.23655228)
+
 This is the simulator and evaluation code for the paper:
 
 > Kirabo, S., Alsayegh, A. *Towards Trustworthy Quality Decision Support for Lateral-Flow Rapid Diagnostic Test Manufacturing with an Explainable Digital Shadow.* Submitted to ISDIA-2027 (Springer Lecture Notes in Networks and Systems).
@@ -52,4 +54,8 @@ Corresponding author: Ali Alsayegh (a.alsayegh@strath.ac.uk), Department of Desi
 
 ## Licence and citation
 
-The code is released under the MIT licence. If you use it, please cite the paper and the archived release (repository: https://github.com/toochii2/rdt-digital-shadow; the DOI will be added after the first Zenodo release; see `CITATION.cff`).
+The code is released under the MIT licence. If you use it, please cite the paper and the archived release (https://doi.org/10.5281/zenodo.23655228; see `CITATION.cff`).
+
+Software citation:
+
+> Kirabo, S., Alsayegh, A. (2026). Explainable digital shadow for lateral-flow RDT manufacturing quality: simulator and evaluation code (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23655228

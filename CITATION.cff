@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using these metadata."
 title: "Explainable digital shadow for lateral-flow RDT manufacturing quality: simulator and evaluation code"
 version: 1.0.0
+doi: 10.5281/zenodo.23655228
 date-released: 2026-11-01
 license: MIT
 authors:
